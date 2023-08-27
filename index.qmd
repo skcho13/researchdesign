@@ -1,0 +1,27 @@
+---
+title: Welcome
+subtitle: 차의과학대학교 연구방법론 2023 2학기
+date: Feb 27, 2023
+author: Sungkyun Cho
+---
+## 강의 정보
+강사: 조성균, sk.cho@snu.ac.kr  
+면담 시간: 수업 후    
+수업시간: 토 9:00 ~ 11:50  
+Website: [.modellings.art](https://.modellings.art)
+
+과제: Notice  
+질문: Communicate/Ask
+
+## 강의 개요
+
+상담심리학 분야에서 수행되는 연구의 특성을 학습하고, 연구자로서의 기본 능력을 다집니다.
+
+일반적인 연구방법들을 이해하고 이를 바탕으로, 상담심리학 분야의 연구들을 이해하고 수행할 수 있도록 합니다.
+
+### 교재
+
+*상담연구방법론(4판)*, 센게이지러닝코리아(주), 2017 by P. Paul Heppner, Bruce E. Wampold, Jesse Owen, Mindi N. Thopso
+
+## 수업 활동
+출석 (5%), 일반과제 (15%), 중간고사 대체 과제 (20%), 기말고사 (30%), 개별 프로젝트 (30%)

@@ -31,7 +31,7 @@ website:
       - href: index.qmd
       - href: contents/notice.qmd
       - text: ---
-      - section: Statistics
+      - section: Notes
         contents:
           - href: contents/overview.ipynb
           # - href: contents/regression1.ipynb
@@ -47,12 +47,8 @@ website:
       - text: ---
       - section: Communicate
         contents:
-          - href: https://docs.google.com/document/d/1LjSKjc3bAd0OY9H7BH_0MXp0RhCSOlWhGpq6zoDzAiY/edit?usp=sharing
+          - href: https://docs.google.com/document/d/1u_ac_TLuJjbgaoxg8c-s9sPNQz5rYiEhmSvsBktn6Xs/edit?usp=sharing
             text: Ask
-          - href: https://docs.google.com/document/d/1NjaZzQdVq22csZLMuCI9GDZmTY-hFHypkFlEBb4Yx9s/edit?usp=sharing
-            text: Consult
-          - href: https://docs.google.com/document/d/1rznMbrQOfHBnYIJvWE-T6YW5jN0yBXQGiohDVLS5Qp4/edit?usp=sharing
-            text: Group Project
 
 format:
   html:

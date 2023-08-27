@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: docs
-  #resources: CNAME
+  resources: CNAME
 
 website:
   page-navigation: true

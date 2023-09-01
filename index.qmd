@@ -10,7 +10,7 @@ author: Sungkyun Cho
 수업시간: 토 9:00 ~ 11:50  
 Website: [chard.modellings.art](https://chard.modellings.art)
 
-과제: Notice 
+과제: Notice  
 질문: Communicate/Ask
 
 ## 강의 개요

@@ -369,8 +369,8 @@ Note
 <li>연봉이 높은 곳은 직업 특성이 다를 수 있음</li>
 <li>또는, 인맥과 인간관계의 변화에서 오는 차이일 수도 있음</li>
 </ul>
-<p>다른 시각에서 보면,<br>
-현재 A의 연봉 2천만원을 갑자기 4천만으로 올리면 삶의 만족도가 트렌드대로 0.8pt 올라가겠는가?</p>
+<p>다른 시각에서 보면, 인과 관계를 가정하더라고 <strong>개입(intervention)</strong>하는 것은 또다른 문제임: 개입은 인과의 매커니즘을 교란시킬 수 있음.</p>
+<p>예를 들어, 현재 A의 연봉 2천만원을 갑자기 4천만으로 올리면 삶의 만족도가 트렌드대로 0.8pt 올라가겠는가?</p>
 <ul>
 <li>연봉의 증가는 주변의 시기와 질투를 가져와 인관관계에 영향을 줄 수 있음<br>
 </li>
@@ -499,7 +499,8 @@ Answer!
 </div>
 </div>
 </div>
-<p>맨 처음 든 예도 마찬가지로   <img src="images/path3.png" class="img-fluid" width="210"></p>
+<p>맨 처음 든 예도 마찬가지로<br>
+나이: <strong>common cause</strong>   <img src="images/path3.png" class="img-fluid" width="210"></p>
 <p>올바른 관계를 파악하려면, 동일한 나이에 대해 그 관계를 파악한 후 각 나이에서의 효과를 (weighted) 평균해서 살펴봐야함</p>
 <p>통계에서는 이를 나이를 <strong>통제 (control for age)</strong>한다고 표현하며, 같은 의미로 다음과 같은 표현을 씀<br>
 나이를 <strong>고려</strong>했을 때; <strong>account for</strong> age<br>
@@ -542,10 +543,6 @@ Answers!
 </div>
 </div>
 </div>
-<p><strong>Colider bias</strong></p>
-<p>운동능력이 뛰어나면 지능이 떨어지는가?</p>
-<p><img src="images/colider.png" class="img-fluid" width="450"><br>
-Source: <em>Statistical Modeling</em> by Daniel T. Kaplan</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -565,6 +562,11 @@ Yes and No!</p>
 그러한 연구는 어떤 요소들을 고려했는지에 대해 밝힘으로써 추후 연구에서 어떤 부분이 더 추가적으로 고려되야 할지 알 수 있게 함.</p>
 </div>
 </div>
+<p><strong>Colider bias</strong></p>
+<p>운동능력이 뛰어나면 지능이 떨어지는가?</p>
+<p><img src="images/colider.png" class="img-fluid" width="450"><br>
+Source: <em>Statistical Modeling</em> by Daniel T. Kaplan</p>
+<hr>
 <p>앞서 살펴본 관찰 연구들이 모두 confounding의 위험을 안고 있기에 결정적인 인과관계를 파악하기 위해, 전통적으로 “통계학”의 시각에서 인과문제에 대해서는 보통 임상테스트에서 실시하는 RCT (randomized controlled trial)라고 부르는 소위 gold standard한 <strong>실험 연구</strong>를 통해서 해결하고자 했음<br>
 개념적으로는 <strong>물리적 통제</strong>라고 볼 수 있으며, 두 그룹으로 집단을 <strong>randomly assign</strong>(무선/무작위 배정/할당)하면 모든 면에서 동질한 성향을 가짐. 예를 들어, 두 집단의 연령이 평균적으로 동일해짐.<br>
 <br></p>
@@ -575,8 +577,9 @@ Yes and No!</p>
 <p>그럼에도 불구하고, 실험 연구는 자체로 한계를 지님</p>
 <ul>
 <li>많은 경우 실험이 불가능하거나 완전한 통제가 어려움</li>
-<li>실험에서 <strong>처치한 구체적인 상황</strong>에서만 유효하고</li>
+<li>실험에서 <strong>처치한 구체적인 상황</strong>에서만 유효하고; 어느 지형을 어느 속도로 누구와 어떻게 걸었는지에 대한 실험 통제하에서</li>
 <li>따라서 그 효과 또한 일반화되어 표현하기 어려움</li>
+<li>반대로, 덜 통제된 실험의 경우 어떤 요인의 효과인지 불분명</li>
 <li>완전한 통제를 할수록 더 인위적인 상황이 연출됨; 자연스러운/현실적인 상황에서 적용된다는 보장이 없음</li>
 <li>실험 참여자는 어떻게 왜 참여한 것인가?</li>
 </ul>
@@ -585,7 +588,7 @@ Yes and No!</p>
 <p>Terror Management Theory (TMT)<br>
 Self-esteem의 이론적 근거를 밝히고자 함. 왜 인간은 self-esteem을 유지하려는가?</p>
 <p><img src="images/TMT.png" class="img-fluid" width="400"></p>
-<p>Treatment: 자신의 죽음과 고통에 대해 생각해보고 써보도록 하고<br>
+<p>Treatment: 자신의 죽음과 그 고통에 대해 생각해보고 써보도록 하고<br>
 Control: 자신의 치통에 대한 질문에 답</p>
 <p>측정: 고정관념에 대해 부정적으로 말하는 사람을 어떻게 평가하는가?<br>
 결과: 그들을 더 부정적으로 평가: defences their own culural worldview<br>
@@ -593,7 +596,7 @@ Control: 자신의 치통에 대한 질문에 답</p>
 <ul>
 <li>죽음이나 치통에 대한 생각은 모두 두려움을 포함해 부정적 감정을 불러 일으키는데</li>
 <li>그저 두려움에 대한 반응인가? 아니면 정확히 “죽음에 대한 생각”이 효과를 만든 것인가?</li>
-<li>참여자들의 부정적 정서를 실험 마지막에 측정한 후 분석에 고려했음</li>
+<li>참여자들의 부정적 정서를 실험 마지막에 측정한 후 분석에 고려했음; covariate</li>
 </ul>
 <div class="cell" data-vscode="{&quot;languageId&quot;:&quot;r&quot;}" data-execution_count="25">
 <div class="cell-output cell-output-display">

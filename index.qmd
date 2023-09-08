@@ -23,4 +23,4 @@ Website: [chard.modellings.art](https://chard.modellings.art)
 *상담연구방법론(4판)*, 센게이지러닝코리아(주), 2017 by Heppner, P. P., Wampold, B. E., Owen, J., Thopso, M. N.
 
 ## 수업 활동
-퀴즈 (20%), 과제 (10%), 중간고사 대체 과제 (30%), 기말고사 대체 과제 (40%)
+출석 (10%), 퀴즈 (20%), 과제 (10%), 중간고사 대체 과제 (30%), 기말고사 대체 과제 (30%)

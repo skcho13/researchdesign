@@ -174,7 +174,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#case-1-1" id="toc-case-1-1" class="nav-link" data-scroll-target="#case-1-1">Case 1</a></li>
   <li><a href="#case-2-1" id="toc-case-2-1" class="nav-link" data-scroll-target="#case-2-1">Case 2</a></li>
   <li><a href="#case-3-1" id="toc-case-3-1" class="nav-link" data-scroll-target="#case-3-1">Case 3</a></li>
+  <li><a href="#case-4" id="toc-case-4" class="nav-link" data-scroll-target="#case-4">Case 4</a></li>
   </ul></li>
+  <li><a href="#selection-bias" id="toc-selection-bias" class="nav-link" data-scroll-target="#selection-bias">Selection Bias</a></li>
   <li><a href="#uncertainty" id="toc-uncertainty" class="nav-link" data-scroll-target="#uncertainty">Uncertainty</a></li>
   <li><a href="#그-외" id="toc-그-외" class="nav-link" data-scroll-target="#그-외">그 외</a></li>
   </ul>
@@ -395,6 +397,8 @@ Note
 <img src="images/indirect.png" class="img-fluid" width="340"><br>
 이 때, 신앙심과 수명과는 진정한 관계가 있다고 볼 수 있으나 (not spurious) 그 인과 관계에 대해서도 좀 더 깊은 논의가 필요함.<br>
 다시 말하면, 어떤 노인에게 신앙을 권유했을 때, 수명이 연장되었을지라도 신앙심이 수명을 연장시킨 것인가는 별개의 논의임.</li>
+<li>인종, 범죄율, 가난, 가족형태에서 나타나는 관계는?</li>
+<li>성별에 따른 임금 차별?</li>
 </ul></li>
 </ul>
 </section>
@@ -437,7 +441,16 @@ Source: <em>Multiple Regression and Beyond</em> by Timothy Z. Keith</p>
 </div>
 </div>
 </div>
-<p><img src="images/latent.png" class="img-fluid" width="650"> <br></p>
+<p><strong>Latent variable model (잠재 변수 모형)</strong></p>
+<p>구체적으로 측정한 변수들간의 관계를 넘어서서, 연구자는 좀 더 추상적이고 개념적인 construct에 대해 이론적 논의를 하고자 한다면, 그 construct를 대변해줄 수 있다고 간주되는 측정가능한 요인들로 “잠재 변수”를 구성하여, 그 잠재 변수들 간의 관계를 파악함.</p>
+<ul>
+<li><p>학업성취도에 미치는 요인들<br>
+<img src="images/latent.png" class="img-fluid" width="650"><br>
+Source: <em>Multiple Regression and Beyond</em> by Timothy Z. Keith</p></li>
+<li><p>사회의 보상체계를 결정하는 요인들<br>
+<img src="images/reward_system.png" class="img-fluid" width="950"><br>
+Source: <em>Applied Multiple Regression/Correlation Analysis for the Behavioral Sciences</em> by Jacob Cohen, Patricia Cohen, Stephen G. West, Leona S. Aiken</p></li>
+</ul>
 </section>
 </section>
 </section>
@@ -481,6 +494,7 @@ Answer!
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
+<p>Spurious relations</p>
 <p><img src="images/confounding.png" class="img-fluid" width="450"></p>
 </div>
 </div>
@@ -490,7 +504,7 @@ Answer!
 <p>통계에서는 이를 나이를 <strong>통제 (control for age)</strong>한다고 표현하며, 같은 의미로 다음과 같은 표현을 씀<br>
 나이를 <strong>고려</strong>했을 때; <strong>account for</strong> age<br>
 나이를 <strong>조정</strong>했을 때; <strong>adjust for</strong> age<br>
-나이를 <strong>잔차화</strong>했을 때; <strong>residualize</strong> age<br>
+나이와 <strong>무관/독립</strong>인; <strong>independent of</strong> age<br>
 나이의 변량을 넘어서서; <strong>above and beyond</strong> age</p>
 <p><strong>Simpson’s paradox</strong></p>
 <p>아래 첫번째 그림은 집단 전체에 대한 플랏이고, 두번째 그림은 나이대별로 나누어 본 플랏<br>
@@ -528,6 +542,10 @@ Answers!
 </div>
 </div>
 </div>
+<p><strong>Colider bias</strong></p>
+<p>운동능력이 뛰어나면 지능이 떨어지는가?</p>
+<p><img src="images/colider.png" class="img-fluid" width="450"><br>
+Source: <em>Statistical Modeling</em> by Daniel T. Kaplan</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -556,9 +574,10 @@ Yes and No!</p>
 <p>분야마다 효과를 제대로 검증하기 위한 많은 실험 설계들이 발전되었음 &gt;&gt; 연구방법론</p>
 <p>그럼에도 불구하고, 실험 연구는 자체로 한계를 지님</p>
 <ul>
-<li>많은 경우 실험이 불가능하며</li>
-<li>실험에서 처치한 구체적인 상황에서만 유효하고</li>
-<li>그 효과는 어떻게 표현할 것인가?</li>
+<li>많은 경우 실험이 불가능하거나 완전한 통제가 어려움</li>
+<li>실험에서 <strong>처치한 구체적인 상황</strong>에서만 유효하고</li>
+<li>따라서 그 효과 또한 일반화되어 표현하기 어려움</li>
+<li>완전한 통제를 할수록 더 인위적인 상황이 연출됨; 자연스러운/현실적인 상황에서 적용된다는 보장이 없음</li>
 <li>실험 참여자는 어떻게 왜 참여한 것인가?</li>
 </ul>
 <section id="case-1-1" class="level3">
@@ -686,6 +705,68 @@ Note
 <li>표본의 수가 충분한가?</li>
 </ul>
 </section>
+<section id="case-4" class="level3">
+<h3 class="anchored" data-anchor-id="case-4">Case 4</h3>
+<p>요양원의 노인들을 대상으로, 독립적 행동의 기회 증가가 그들의 정신 건강에 미치는 영향</p>
+<p>Langer, E. J., &amp; Rodin, J. (1976). The effects of choice and enhanced personal responsibility for the aged: <strong>A field experiment</strong> in an institutional setting. Journal of Personality and Social Psychology, 34, 191–198.</p>
+<p><img src="images/nursing_home.png" class="img-fluid" width="900"></p>
+<ul>
+<li>두 층의 노인들의 특성은 동일한가?
+<ul>
+<li>pretest에서 두 그룹 간의 특성이 유사한지에 대한 체크 문항: 모두 측정할 수는 없음!</li>
+</ul></li>
+<li>간호사 스탭들의 효과?
+<ul>
+<li>두 층의 할당된 간호사들의 차이?</li>
+<li>스텝들 자신들도 변화된 요양원의 지침에 반응했는가? 또한 그 변화에 노인들도 반응했는가?</li>
+</ul></li>
+<li>두 층에서 동일하게 활동이나 환경의 변화가 일어났는가? 예, 간호사의 변경</li>
+<li>두 층의 노인들 간의 교류? 오염 요인</li>
+<li>구체적으로 어떤 요인이 효과를 낸 것인가?
+<ul>
+<li>“treatment package”</li>
+<li>갑작스러운 변화 자체?</li>
+</ul></li>
+<li>이 요양원에 들어온 노인들의 특성이 있는가?
+<ul>
+<li>사회경제적 수준이 높은 노인들의 경우 독립적 생활에 대한 더 긍정적 효과가 발현?</li>
+<li>다른 특성의 요양원의 노인들에게도 적용가능한가?</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>설문(서베이)을 통한 실험연구도 온라인 서베이 툴이 발전함에 따라 용이해졌음.</p>
+<ul>
+<li>가령, 300명의 참여자들이 온라인 설문에 참여했을 때, 참여자의 1/3 각각에 대해 서로 다른 설문 세트 A, B, C가 무작위로 배정되도록 할 수 있으며,</li>
+<li>각 설문 세트에서도 인터랙티브하게 조건에 따라 다른 문항들에 노출되도록 할 수 있음.</li>
+<li>대표적인 서베이 툴: <a href="https://www.qualtrics.com">Qualtrics</a></li>
+<li>온라인 서베이 참여자 풀: M-turk, Prolific</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="selection-bias" class="level2">
+<h2 class="anchored" data-anchor-id="selection-bias">Selection Bias</h2>
+<p>수집된 데이터의 성격에 따라 인과추론을 방해하거나 일반화할 수 있는 대상의 범위가 제한됨</p>
+<ul>
+<li>노인에 관한 데이터: 누가 사망했는가?
+<ul>
+<li>관찰 할 수 없는 대상</li>
+<li>과거 기록을 이용?</li>
+</ul></li>
+<li>설문 데이터: 누가 참여했는가?</li>
+<li>회사 내에서의 만족도 조사: 근속년수에 따른 샘플 속성의 변화</li>
+<li>코호트/특정세대의 특성: 그들의 특성인가?</li>
+</ul>
 </section>
 <section id="uncertainty" class="level2">
 <h2 class="anchored" data-anchor-id="uncertainty">Uncertainty</h2>
@@ -711,11 +792,9 @@ Note
 <li>첫번째 그림에서처럼 (알수는 없지만) 어떤 population을 가정하는데, 그 모집단에는 age와 wage의 true relationship이 선형적으로 존재한다고 가정함. 연구자가 한번에 150명으로 이루어진 sample을 반복적으로 관찰한다면, 샘플마다 age와 wage의 관계는 다르게 나타날 것임 (두번째 그림).</li>
 <li>예를 들어, 그 기울기에 관심이 있다면, 샘플들로부터 나타나는 기울기들의 분포를 살펴봄으로써 (세번째 그림) 샘플에서 나타날 수 있는 기울기값이 어떠한가를 파악할 수 있음.<br>
 </li>
-<li>이 분포를 <strong>sampling distribution</strong>이라고 부름</li>
+<li>이 분포를 <strong>sampling distribution</strong>(표본 분포)이라고 부름</li>
 <li>이 분포에 따르면 평균이 0.066이고, 기울기 값들의 95%가 0.005 ~ 0.140 범위에 있음을 알 수 있음.</li>
 <li>다시말하면, 연구자가 관찰한 샘플로부터 연구자는 (age와 wage의 선형성을 가정한다면), 매우 큰 확신을 갖고 나이가 10세 늘때마다 시간당 임금의 증가율은 0.05에서 1.4달러 사이에 있을 것이라고 말할 수 있음.</li>
-<li>확신이 커지려면 임금증가율의 범위가 넓어져야 함. 예를 들어, 99%의 확신을 갖고 나이가 10세 늘때 시간당 임금의 증가율은 -0.18에서 1.67달러 사이에 있을 것이라고 말할 수 있음. 별로 의미없는 발언이 될 수 있음.</li>
-<li>반대로, 확신에 대해서는 양보하는 대신 임금증가율에 대한 범위폭을 줄일 수 있음. 예를 들어 90%의 조금 낮은 확신을 갖고 임금증가율은 0.14에서 1.3달러 사이에 있을 것이라고 말할 수 있음</li>
 </ul>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -726,22 +805,6 @@ Source: <em>The Truthful Art</em> by Albert Cairo.</p>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="images/bootstrap.png" class="img-fluid" width="380"></p>
 </div>
-</div>
-</div>
-<div class="cell quarto-layout-panel" data-vscode="{&quot;languageId&quot;:&quot;r&quot;}" data-execution_count="72">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="overview_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
-</div>
-</div>
-</div>
-<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;r&quot;}" data-execution_count="73">
-<div class="cell-output cell-output-stdout">
-<pre><code>Bootstrap bca confidence intervals
-
-            Estimate 2.5 % 97.5 %
-(Intercept)    6.563 3.926  8.908
-age            0.066 0.005  0.140</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -764,7 +827,7 @@ Pearl, Judea, and Dana Mackenzie. 2018. The Book of Why: The New Science of Caus
 </section>
 <section id="그-외" class="level1">
 <h1>그 외</h1>
-<p>종속변수가 연속변수라고 볼 수 없는 경우들</p>
+<p>종속변수가 연속변수라고 볼 수 없는 경우들에 대해 연구하려면 좀 더 다른 방식의 분석이 요구됨.</p>
 <ul>
 <li>완치 여부: success vs.&nbsp;fail</li>
 <li>구매 여부: yes vs.&nbsp;no</li>

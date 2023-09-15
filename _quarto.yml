@@ -25,7 +25,7 @@ website:
     align: center
     style: "docked"
     search: true
-    collapse-level: 3
+    collapse-level: 2
     
     contents:
       - href: index.qmd
@@ -34,6 +34,18 @@ website:
       - section: Notes
         contents:
           - href: contents/overview.ipynb
+          - section: 5장 관심사와 연구주제
+            contents:
+              - href: contents/research-topics.qmd
+                text: 연구 주제
+              - href: contents/research-topics2.qmd
+                text: 가설 개발
+          - section: 6장 연구설계의 선택
+            contents:
+              - href: contents/select-design.qmd
+                text: 연구 설계의 기본
+              - href: contents/select-design2.qmd
+                text: 연구 설계의 분류
           # - href: contents/regression1.ipynb
           #   text: Simple Regression
           # - href: contents/regression2.qmd
@@ -61,7 +73,7 @@ format:
     theme: [sandstone, theme-light.scss]
     # monofont: 'FiraCode-Light'
     fontsize: 0.95em
-    linestretch: 1.7
+    linestretch: 2
     code-copy: true
     highlight-style: Ayu-light
     link-external-newwindow: true

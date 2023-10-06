@@ -9,7 +9,7 @@
 <meta name="author" content="Sungkyun Cho">
 <meta name="dcterms.date" content="2023-02-27">
 
-<title>CHA Research Design - 외적 타당도 (7장)</title>
+<title>CHA Research Design - 모집단 문제 (8장)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../contents/population.html" rel="next">
-<link href="../contents/validity3.html" rel="prev">
+<link href="../contents/validity4.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/overview.html">Notes</a></li><li class="breadcrumb-item"><a href="../contents/validity.html">7장 타당도의 문제</a></li><li class="breadcrumb-item"><a href="../contents/validity4.html">외적 타당도</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/overview.html">Notes</a></li><li class="breadcrumb-item"><a href="../contents/population.html">8장 모집단 문제</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -178,11 +177,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../contents/validity.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">7장 타당도의 문제</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../contents/validity1.html" class="sidebar-item-text sidebar-link">
@@ -203,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contents/validity4.html" class="sidebar-item-text sidebar-link active">
+  <a href="../contents/validity4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">외적 타당도</span></a>
   </div>
 </li>
@@ -211,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contents/population.html" class="sidebar-item-text sidebar-link">
+  <a href="../contents/population.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">8장 모집단 문제</span></a>
   </div>
 </li>
@@ -241,14 +240,27 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#표본추출이론-sampling-therory" id="toc-표본추출이론-sampling-therory" class="nav-link active" data-scroll-target="#표본추출이론-sampling-therory">표본추출이론 (Sampling Therory)</a></li>
+  <li><a href="#참여자-선택에-관한-실제적인-고려사항" id="toc-참여자-선택에-관한-실제적인-고려사항" class="nav-link" data-scroll-target="#참여자-선택에-관한-실제적인-고려사항">참여자 선택에 관한 실제적인 고려사항</a>
+  <ul>
+  <li><a href="#목표-모집단-정의하기" id="toc-목표-모집단-정의하기" class="nav-link" data-scroll-target="#목표-모집단-정의하기">목표 모집단 정의하기</a></li>
+  <li><a href="#참여자-풀-만들기" id="toc-참여자-풀-만들기" class="nav-link" data-scroll-target="#참여자-풀-만들기">참여자 풀 만들기</a></li>
+  <li><a href="#참여자-선택하기" id="toc-참여자-선택하기" class="nav-link" data-scroll-target="#참여자-선택하기">참여자 선택하기</a></li>
+  <li><a href="#타당도-확립하기" id="toc-타당도-확립하기" class="nav-link" data-scroll-target="#타당도-확립하기">타당도 확립하기</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">외적 타당도 (7장)</h1>
+<h1 class="title">모집단 문제 (8장)</h1>
 <p class="subtitle lead">상담연구방법론, by Heppner, P. P., Wampold, B. E., Owen, J., Thopso, M. N.</p>
 </div>
 
@@ -276,8 +288,162 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>연구 결과가 다른 맥락에 얼마나 적용 가능할 것인가에 대한 물음<br>
+예를 들어,</p>
+<ul>
+<li>치료에 관한 연구 결과가 정신건강 기관(mental health agencies)에서 볼 수 있는 유형의 환자들에게 적용 가능한가?</li>
+<li>결혼 만족도에 관한 연구가 다양한 민족이나 인종에게도 타당한 정보를 제공하는가?</li>
+<li>어떤 연구에 대학생 표본을 사용하는 것이 적절한가?</li>
+</ul>
+<p><em>모집단의 문제가 <strong>연구 설계</strong>와 <strong>해석</strong>에 어떻게 악영향을 주는지에 대해 살펴봄</em></p>
+<section id="표본추출이론-sampling-therory" class="level2">
+<h2 class="anchored" data-anchor-id="표본추출이론-sampling-therory">표본추출이론 (Sampling Therory)</h2>
+<p>논리적으로 표현하면,</p>
+<ul>
+<li>연구자가 관심 있는 전체 집단을 <strong>모집단(population)</strong>이라고 보고,</li>
+<li>그 모집단에서 일부를 추출한 것을 <strong>표본(sample)</strong>으로 봄.</li>
+</ul>
+<p>예를 들어, 전국의 모든 대학생에 대해 관심이 있다면,</p>
+<ul>
+<li>전국의 모든 대학생을 모집단으로 보고,</li>
+<li>그 중 일부를 추출한 대상을 표본으로 봄.</li>
+</ul>
+<p><strong>“편향(bias)”되지 않는 표본을 추출하는 것이 핵심임!</strong></p>
+<p>앞의 예에서 편향되지 않은 표본을 추출하기 위해서는(표본의 크기 100), 모든 대학생들이 <strong>동일한 확률</strong>로 표본에 포함될 수 있도록 장치를 마련해야 함.</p>
+<ul>
+<li>예를 들어, 전국 모든 대학생들의 명단을 확보한 후, 무작위로 100명을 선택하여, 연락 후 표본을 구해야 함: “무작위 추출(random sampling)”</li>
+<li>만약, 참여의사를 없는 학생을 제외한다면 편향이 생길 수 있음.</li>
+<li>응용연구에서 대부분 불가능한 조건임.</li>
+<li>특히, 상담연구에서는 어떤 지역에서 내담자를 선택할 정도만 되어도 운이 좋은 편임.</li>
+<li>대부분, 참여의사의 여부에 따르므로, 참여의사가 없는 대상들이 어떤 특징을 가질 수 있으므로 추론에 편향을 줄 수 있음.</li>
+</ul>
+<p>따라서, 현실적으로는</p>
+<ul>
+<li>구할 수 있는 표본이 관심이 있는 모집단을 얼마나 잘 대표할 수 있는가를 고민하거나,</li>
+<li>반대로, 이 표본으로부터 모집단을 어느 정도로 확대, 일반화 할 수 있는가를 추정해야 함.
+<ul>
+<li>예. 성소수자에 대한 연구를 하는데, 관찰할 수 있는 표본이 얼마나 성소수자를 대표할 수 있는가?</li>
+<li>반면, 성소수자 안에서도 구별될 수 있는 그룹이 존재할 수 있는가? 그렇다면, 관측값에 포함하여 비교하는 탐색적 과정이 필요함.</li>
+</ul></li>
+<li>표본의 크기가 클수록 다양한 대상을 포함하기 때문에 대표성은 높아진다고 볼 수 있음.</li>
+</ul>
+</section>
+<section id="참여자-선택에-관한-실제적인-고려사항" class="level2">
+<h2 class="anchored" data-anchor-id="참여자-선택에-관한-실제적인-고려사항">참여자 선택에 관한 실제적인 고려사항</h2>
+<section id="목표-모집단-정의하기" class="level3">
+<h3 class="anchored" data-anchor-id="목표-모집단-정의하기">목표 모집단 정의하기</h3>
+<ul>
+<li>모집단은 엄밀히는 관찰의 대상이 아니라 관찰값을 의미함.</li>
+<li>예를 들어, 설문을 한 대학생이 모집단이 아니고 그 대학생들으로부터 관측된 설문의 값(측정치)이 모집단임.</li>
+<li>하지만, 일반적으로 사람의 특성에 의해 정의됨</li>
+<li>예를 들어, 진단적 범주, 성별, 민족, 나이, 성적 지향, 출신 지역, 종교, 결혼 상태, 사회경제적 지위</li>
+<li>연구 주제에 영향을 미칠 수 있는 특성에 대해서 고려해야 함.</li>
+</ul>
+<p><strong>모집단의 이질성 vs.&nbsp;동질성</strong></p>
+<ul>
+<li>모집단이 이질적일수록 일반화할 수 있는 범위가 넓어짐.</li>
+<li>예를 들어, 모집단을 학부생으로 제한하여 연구한다면 무직 노동자와 다른 집단의 우울증에 대해서도 그 효능이 있는지는 알 수 없음.</li>
+<li>하지만, 이질적인 대상들일 수록 대상들의 반응에는 변동성이 높아지고, 관측값들의 노이즈 혹은 오차 변량(error variance)가 커지게 되어 보고 싶은 관계가 덜 분명하게 나타남.</li>
+<li>예를 들어, 지역에 따른 차이가 존재할 때, 노이즈가 많아지나 이를 통제적으로 노이즈를 제거하여 관계를 분명히 할 수 있는 방법이 있음. <img src="images/homogeneity.png" class="img-fluid" width="500"><br>
+</li>
+<li>처음부터 도시 거주민들만으로 제한하면 (동질적인 모집단) 관계는 분명해지나, 일반화할 수 있는 범위가 좁아짐.</li>
+<li>다양한 지역의 거주민들을 포함하면 (이질적인 모집단) 관계는 분명하지 않아지나 (통계적 보정으로 어느 정도 해결 가능), 일반화할 수 있는 범위가 넓어짐.</li>
+</ul>
+<p>미국의 대규모 심리치료 연구들도 종종 그 대상이 백인, 중산층 표본에 근거하고 있음.</p>
+<ul>
+<li>다양한 집단에 대해서도 적용될지는 의문</li>
+<li>특히 건강 불평등의 차별적 문제에 대해 상담심리학자들이 관심이 요구됨.</li>
+</ul>
+</section>
+<section id="참여자-풀-만들기" class="level3">
+<h3 class="anchored" data-anchor-id="참여자-풀-만들기">참여자 풀 만들기</h3>
+<p>모집단이 정의되면, 이 1) 정의에 부합하고 2) 구할 수 있는 사람들을 찾아야 함.<br>
+이 사람들을 참여자 풀(participant pool)이라고 함.</p>
+<ul>
+<li>예를 들어, 목표 모집단이 대학 상담 센터의 내담자라면,</li>
+<li>참여자 풀은 종종 연구자 주변에서 구할 수 있는 참여자들로 제한됨.</li>
+<li>보통 이처럼 모집단을 대표하기 어려운 편향적인 참여자 풀로 구성됨.</li>
+</ul>
+<p>따라서, 이러한 제약이 연구 결과에 영향을 미치지 않는다는 증거를 제시해야 함; <strong>배경지식</strong>과 <strong>선행 연구</strong>를 바탕으로</p>
+<ul>
+<li>예를 들어, “신체적 스트레스에 대한 생리적 반응”에 대한 연구 vs.&nbsp;“낙태에 대한 태도” 연구</li>
+<li>전자는 지역에 따른 차이가 존재하지 않을 것이라고 예상할 수 있느나 후자는 큰 차이를 보일 것이라고 예상할 수 있음.</li>
+</ul>
+<p>따라서 연구들이 반복적으로 특정 집단 특히, 소외된 집단을 배제되지 않도록 노력해야 함.</p>
+<p><strong>자발적 참여자</strong>의 특징</p>
+<ul>
+<li>참여자 풀은 사실 자발적 참여자들을 대상으로 하고 있다는 점에도 모두 편향성을 지님.</li>
+<li>높은 교육 수준, 사회적 인정에 대한 욕구, 지적이고, 덜 권위적이며, 적응을 잘하고, 자극을 추구하는 경향이 있음.</li>
+</ul>
+<p>끝으로, 모집단의 정의에 맞는지를 검증하는 절차가 요구됨</p>
+<ul>
+<li>예를 들어, 우울한 학생에 대한 연구에서 적어도 경증의 우울증을 가진 사람을 선별하기 위해 250명 이상의 학생들에게 벡 우울 질문지 검사를 수행</li>
+</ul>
+</section>
+<section id="참여자-선택하기" class="level3">
+<h3 class="anchored" data-anchor-id="참여자-선택하기">참여자 선택하기</h3>
+<p>참여자 풀에서 실제 참여자를 결정</p>
+<ul>
+<li>이상적으로는 참여자 풀에서 “무작위”로 선택</li>
+<li>현실적으로는 참여 가능한 참여자들로 구성됨</li>
+<li>예를 들어, 센터에 방문했던 모든 내담자를 연구에 참여하도록 요청
+<ul>
+<li>접수 면접에 온 520명 중 424명이 참여에 동의함.</li>
+<li>이들은 접수 면접 전에 시행된 설문조사에 응답하였으나,</li>
+<li>83명만이 사례가 종료된 후에도 설문조사에 응답함.</li>
+</ul></li>
+</ul>
+</section>
+<section id="타당도-확립하기" class="level3">
+<h3 class="anchored" data-anchor-id="타당도-확립하기">타당도 확립하기</h3>
+<p>무작위 선택이 불가능한 경우도 연구의 목적을 달성하는데 “충분”하다고 볼 수 있는 근거를 마련할 수 있음.</p>
+<ul>
+<li>예를 들어, 직업 유형에 관한 이론은 개인의 경력 선택과 만족감이 그들의 성격 유형과 관련이 있다고 주장함.
+<ul>
+<li>이 때는, “다양한 전공”을 가진 학부생을 대상으로 참여자를 선택하는 것은 적절함.</li>
+</ul></li>
+<li>반대로, 직업개발이론은 다양한 생애 단계와 진로 개발 과제를 연결하는데,
+<ul>
+<li>이 때는, 대학생 표본을 선택하는 것은 부적절함.</li>
+</ul></li>
+<li>또한, 동성애 혐오 피해에 관한 연구에서, 미국의 청소년을 대상으로 했는데,
+<ul>
+<li>이는 중서부 지역의 백인 피해 청소년들의 심리사회적, 교육적 발달에 영향을 미친다는 결과는 보여주기에 충분함.</li>
+</ul></li>
+</ul>
+<p>따라서, 이상적인 표본을 선택할 수 없는 상황에서,<br>
+참여자들의 <strong>특성</strong>을 파악하여 적절한 가설의 모집단으로 일반화 할 수 있음을 보이도록 노력이 요구됨!</p>
+<p>특히, 범주적 상태에 따라 나뉘는 집단의 차이에 대해 일반화하는데 주의가 필요함.</p>
+<ul>
+<li>예를 들어, 우울에 대한 종교 기반 행동 활성화 개임의 효능을 검증하는데, 50명 중 47명이 기독교인이었음.
+<ul>
+<li>종교 일반에 대한 일반화가 가능하려면, 인구에 포함된 종교의 비율과 <strong>동일한 비율</strong>의 표본이 이상적임.</li>
+<li>하지만, 적어도 이 연구는 기독교인에게는 효과가 있다는 것을 보여줌.</li>
+<li>후속연구에서 다른 종교인에 대한 효과를 검증하는 연구를 통해 보충할 수 있음.</li>
+</ul></li>
+<li>두 인종, 백인과 흑인 청소년 간의 학업 성취도, 스트레스, 불안감을 비교했을 때,
+<ul>
+<li>두 집단 간의 차이는 인종의 문제로 귀결(귀인)될 수 없음!!!</li>
+<li>이런 성격의 집단 간의 비교는 무선 할당과 같은 실험적 연구로 수행될 수 없다는 점은 인과문제를 복잡하게 만듦.</li>
+<li>예를 들어, 두 집단은 사회경제적 지위, 가족 상태, 부모의 개입과 감독 정도, 지역사회의 범죄율 등의 요인들이 다를 수 있음.</li>
+<li>만약, 흑인들의 가난이 학업 성취도에 부정적으로 영향을 줬다면, 이는 가난의 차이로 인한 집단 간 차이임.</li>
+<li>이는 인종을 제외하고는 모든 다른 상태가 동일할 때에만 인종의 문제로 귀결할 수 있음.</li>
+<li>따라서, 그 요인을 모른다면, 위 연구는 일반화(외적 타당도)에도 제한이 될 수 밖에 없음. 예) 흑인이 부유한 지역에서는?</li>
+</ul></li>
+</ul>
+<p>따라서, 표본의 특성을 최대한 파악하고, 결과의 해석에서 여지를 줄이도록 노력해야 함!</p>
+<ul>
+<li>무수히 많은 특성이 존재하기는 하나 연구 결과에 영향을 미칠 수 있는 특성들을 파악하도록 노력</li>
+<li>기본적으로 연령, 교육 수준, 사회경제적 지위, 성별, 이민자의 경우 언어 및 문화 적응 정도, 인종 정체성 발달 정도, 지리적 위치 등을 파악</li>
+<li>표본에 반드시 여성과 소수 인종/민족을 포함하도록 권고</li>
+<li>인종 소수자 및 경제적 불이익을 받는 집단에 대한 표본을 얻는 것이 어려우나, 이들에 대한 연구가 필요함. (지침서는 교재 참고)</li>
+</ul>
+<p>대부분의 심리학 연구가 세계 인구의 5%만을 차지하는 미국인을 표본으로 하고 있다는 점은 일반화에 대한 의구심을 충분히 제기할 수 있음.<br>
+세계의 다양한 집단에 대한 비교 연구에 대한 지침들이 제시되고 있음. (교재 참고)</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -529,14 +695,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../contents/validity3.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">구성 타당도</span>
+      <a href="../contents/validity4.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">외적 타당도</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../contents/population.html" class="pagination-link">
-        <span class="nav-page-text">8장 모집단 문제</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

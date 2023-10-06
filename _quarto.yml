@@ -56,6 +56,8 @@ website:
                 text: 구성 타당도
               - href: contents/validity4.qmd
                 text: 외적 타당도
+          - href: contents/population.qmd
+            text: 8장 모집단 문제
           # - href: contents/regression1.ipynb
           #   text: Simple Regression
           # - href: contents/regression2.qmd

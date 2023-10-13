@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  render: 
+    - "*.qmd"
+    - "*.ipynb"
+    - "!resources*.ipynb"
   resources: CNAME
 
 website:
@@ -58,6 +62,8 @@ website:
                 text: 외적 타당도
           - href: contents/population.qmd
             text: 8장 모집단 문제
+          - href: contents/scale.qmd
+            text: 10장 척도개발
           # - href: contents/regression1.ipynb
           #   text: Simple Regression
           # - href: contents/regression2.qmd

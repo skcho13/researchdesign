@@ -68,7 +68,7 @@ website:
                 text: 10장 척도개발
           - section: Part 3
             contents:
-              - href: contents/true-experiment.qmd
+              - href: contents/true-experiments.qmd
                 text: 11장 진실험 실험
               # - href: contents/regression1.ipynb
               #   text: Simple Regression

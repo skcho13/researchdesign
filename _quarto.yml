@@ -29,7 +29,7 @@ website:
     align: center
     style: "docked"
     search: true
-    collapse-level: 2
+    collapse-level: 3
     
     contents:
       - href: index.qmd
@@ -38,42 +38,48 @@ website:
       - section: Notes
         contents:
           - href: contents/overview.ipynb
-          - section: 5장 관심사와 연구주제
+          - section: Part 2
             contents:
-              - href: contents/research-topics.qmd
-                text: 연구 주제
-              - href: contents/research-topics2.qmd
-                text: 가설 개발
-          - section: 6장 연구설계의 선택
+              - section: 5장 관심사와 연구주제
+                contents:
+                  - href: contents/research-topics.qmd
+                    text: 연구 주제
+                  - href: contents/research-topics2.qmd
+                    text: 가설 개발
+              - section: 6장 연구설계의 선택
+                contents:
+                  - href: contents/select-design.qmd
+                    text: 연구 설계의 기본
+                  - href: contents/select-design2.qmd
+                    text: 연구 설계의 분류
+              - section: contents/validity.qmd
+                contents: 
+                  - href: contents/validity1.qmd
+                    text: 통계적 결론 타당도
+                  - href: contents/validity2.qmd
+                    text: 내적 타당도
+                  - href: contents/validity3.qmd
+                    text: 구성 타당도
+                  - href: contents/validity4.qmd
+                    text: 외적 타당도
+              - href: contents/population.qmd
+                text: 8장 모집단 문제
+              - href: contents/scale.qmd
+                text: 10장 척도개발
+          - section: Part 3
             contents:
-              - href: contents/select-design.qmd
-                text: 연구 설계의 기본
-              - href: contents/select-design2.qmd
-                text: 연구 설계의 분류
-          - section: contents/validity.qmd
-            contents: 
-              - href: contents/validity1.qmd
-                text: 통계적 결론 타당도
-              - href: contents/validity2.qmd
-                text: 내적 타당도
-              - href: contents/validity3.qmd
-                text: 구성 타당도
-              - href: contents/validity4.qmd
-                text: 외적 타당도
-          - href: contents/population.qmd
-            text: 8장 모집단 문제
-          - href: contents/scale.qmd
-            text: 10장 척도개발
-          # - href: contents/regression1.ipynb
-          #   text: Simple Regression
-          # - href: contents/regression2.qmd
-          #   contents:
-          #     - href: contents/case1.qmd
-          #     - href: contents/case2.qmd
-          #     - href: contents/case3.qmd
-          #     - href: contents/case3_sol.qmd
-          #       text: Case Study 3 Sol
-          #     - href: contents/case4.qmd
+              - href: contents/true-experiment.qmd
+                text: 11장 진실험 실험
+              # - href: contents/regression1.ipynb
+              #   text: Simple Regression
+              # - href: contents/regression2.qmd
+              #   contents:
+              #     - href: contents/case1.qmd
+              #     - href: contents/case2.qmd
+              #     - href: contents/case3.qmd
+              #     - href: contents/case3_sol.qmd
+              #       text: Case Study 3 Sol
+              #     - href: contents/case4.qmd
       - text: ---
       - section: Communicate
         contents:

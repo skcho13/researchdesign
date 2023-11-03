@@ -69,7 +69,9 @@ website:
           - section: Part 3
             contents:
               - href: contents/true-experiments.qmd
-                text: 11장 진실험 실험
+                text: 11장 진실험 설계
+              - href: contents/quasi-experiments.qmd
+                text: 12장 준실험과 종단 설계
               # - href: contents/regression1.ipynb
               #   text: Simple Regression
               # - href: contents/regression2.qmd
@@ -96,6 +98,8 @@ format:
     code-summary: "Show the code"
     theme: [sandstone, theme-light.scss]
     # monofont: 'FiraCode-Light'
+    # mainfont: "NanumMyungjo"
+    mainfont: "Gowun Batang"
     fontsize: 0.95em
     linestretch: 2
     code-copy: true

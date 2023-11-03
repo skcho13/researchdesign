@@ -31,6 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../contents/quasi-experiments.html" rel="next">
 <link href="../contents/scale.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -76,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/overview.html">Notes</a></li><li class="breadcrumb-item"><a href="../contents/true-experiments.html">Part 3</a></li><li class="breadcrumb-item"><a href="../contents/true-experiments.html">11장 진실험 실험</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/overview.html">Notes</a></li><li class="breadcrumb-item"><a href="../contents/true-experiments.html">Part 3</a></li><li class="breadcrumb-item"><a href="../contents/true-experiments.html">11장 진실험 설계</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -245,7 +246,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../contents/true-experiments.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">11장 진실험 실험</span></a>
+ <span class="menu-text">11장 진실험 설계</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/quasi-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12장 준실험과 종단 설계</span></a>
   </div>
 </li>
       </ul>
@@ -551,36 +558,36 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 31.3%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 35.0%;justify-content: center;">
 <table class="table">
 <thead>
 <tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: left;">Tx1</th>
-<th style="text-align: left;">Tx2</th>
-<th style="text-align: left;">통제집단</th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;">T1</th>
+<th style="text-align: center;">T2</th>
+<th style="text-align: center;">통제집단</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">남학생</td>
-<td style="text-align: left;">20</td>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">5</td>
+<td style="text-align: center;">남학생</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">5</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">여학생</td>
-<td style="text-align: left;">8</td>
-<td style="text-align: left;">15</td>
-<td style="text-align: left;">5</td>
+<td style="text-align: center;">여학생</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">5</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 1.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 3.0%;justify-content: center;">
 <p><br></p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 67.7%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 62.0%;justify-content: center;">
 <p><img src="images/factorial-design.png" class="img-fluid" width="400"></p>
 </div>
 </div>
@@ -590,7 +597,7 @@ ul.task-list li input[type="checkbox"] {
 <li>상호작용 효과(interaction effect)를 파악할 수 있음.
 <ul>
 <li>두 가지 개입이 성별에 따라 동일한 효과를 보이지 않음</li>
-<li>남학생에게는 Tx1이 더 효과적이고, 여학생에게는 Tx2가 더 효과적임.å</li>
+<li>남학생에게는 T1이 더 효과적이고, 여학생에게는 T2가 더 효과적임.</li>
 </ul></li>
 <li>참여자의 성별, 개입의 유형, 내담자의 나이, 내담자의 문제해결 양식과 같이 처치가 작동할 수 있는 조건들에 대한 답을 제공</li>
 <li>상호작용과 함께, 주 효과(main effect)라고 불리는 각 독립변수의 효과를 파악할 수 있음.
@@ -632,6 +639,7 @@ ul.task-list li input[type="checkbox"] {
 <li>참여자는 모든 처치 조건에 노출됨.</li>
 <li>처치의 순서가 무선 할당됨.</li>
 <li>참여자가 자기 자신의 통제(control) 역할을 하게 됨.</li>
+<li>Repeated measures design이라고도 함.</li>
 </ul>
 <section id="교차-설계-crossover-design" class="level3">
 <h3 class="anchored" data-anchor-id="교차-설계-crossover-design">교차 설계 (crossover design)</h3>
@@ -664,7 +672,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>연구 예시 (Piet, Hougaard, Hecksher, &amp; Rosenberg, 2010)</p>
 <ul>
-<li>사회공포증이 있는 대상으로 “집단 마음챙김 기반 인지치료”와 “집단 인지행도치료”의 효과를 비교</li>
+<li>사회공포증이 있는 대상으로 “집단 마음챙김 기반 인지치료”와 “집단 인지행동치료”의 효과를 비교</li>
 </ul>
 <p><img src="images/Piet-1.png" class="img-fluid" width="810"><br>
 <img src="images/Piet-2.png" class="img-fluid" width="900"><br>
@@ -706,7 +714,7 @@ ul.task-list li input[type="checkbox"] {
 <li>시골 출신이자 도시 출신 일 수 없음.</li>
 </ul></li>
 </ul>
-<p>이런 설계의 한계에도 그 창의적 설계를 통해 유용한 연구를 만들어 낼 수 있음을 기억할 것!</p>
+<p>이런 설계의 한계에도 창의적 설계를 통해 유용한 연구를 만들어 낼 수 있음을 기억할 것!</p>
 
 
 </section>
@@ -967,6 +975,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../contents/quasi-experiments.html" class="pagination-link">
+        <span class="nav-page-text">12장 준실험과 종단 설계</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

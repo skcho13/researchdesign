@@ -98,7 +98,7 @@ format:
     code-summary: "Show the code"
     theme: [sandstone, theme-light.scss]
     # monofont: 'FiraCode-Light'
-    #mainfont: "Gowun Batang"
+    mainfont: "Gowun Batang"
     fontsize: 0.95em
     linestretch: 2
     code-copy: true

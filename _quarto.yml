@@ -105,5 +105,5 @@ format:
     highlight-style: Ayu-light
     link-external-newwindow: true
     header-includes: |
-      <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css2?family=Gowun+Batang"> type="text/css"/>
+      <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css2?family=Gowun+Batang">
     # css: styles.css

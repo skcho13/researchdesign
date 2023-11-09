@@ -2,6 +2,7 @@
 // Base document colors
 
 $link-color: #20B2AA; // 9480e4, 1988b0
+$body-color: rgba(0, 0, 0, 0.8);  // font color
 
 $sidebar-bg: #ffffff; // F6F6FF
 $sidebar-fg: #7a63d4; // 6B51D8, 51a9d8
@@ -12,9 +13,24 @@ $h2-font-size: 1.25rem;
 $h3-font-size: 1.15rem;
 $h4-font-size: 1.05rem;
 
+$font-family-sans-serif: 'Gowun Batang', sans-serif;
+
+$sidebar-font-size: 0.925rem !default;
+$sidebar-font-size-section: 0.875rem !default;
+
 // Code blocks
 $code-block-bg-alpha: -.8;
 $code-block-bg: #F6F6FF;
 $code-block-border-left: #FFDE7C;
-
 $code-color: #FF6347; //FE5370
+
+/*-- scss:rules --*/
+
+// Variables
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap";
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+// https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap

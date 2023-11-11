@@ -9,7 +9,7 @@
 <meta name="author" content="Sungkyun Cho">
 <meta name="dcterms.date" content="2023-02-27">
 
-<title>CHA Research Design - 모집단 문제 (8장)</title>
+<title>CHA Research Design - 양적 기술 설계 (13장)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../contents/scale.html" rel="next">
-<link href="../contents/validity4.html" rel="prev">
+<link href="../contents/quasi-experiments.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,6 +68,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -81,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/overview.html">Notes</a></li><li class="breadcrumb-item">Part 2</li><li class="breadcrumb-item"><a href="../contents/population.html">8장 모집단 문제</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/overview.html">Notes</a></li><li class="breadcrumb-item"><a href="../contents/true-experiments.html">Part 3</a></li><li class="breadcrumb-item"><a href="../contents/observation.html">13장 양적 기술 설계</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -226,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contents/population.html" class="sidebar-item-text sidebar-link active">
+  <a href="../contents/population.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">8장 모집단 문제</span></a>
   </div>
 </li>
@@ -261,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contents/observation.html" class="sidebar-item-text sidebar-link">
+  <a href="../contents/observation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">13장 양적 기술 설계</span></a>
   </div>
 </li>
@@ -297,18 +298,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#표본추출이론-sampling-theory" id="toc-표본추출이론-sampling-theory" class="nav-link active" data-scroll-target="#표본추출이론-sampling-theory">표본추출이론 (Sampling Theory)</a></li>
-  <li><a href="#참여자-선택에-관한-실제적인-고려사항" id="toc-참여자-선택에-관한-실제적인-고려사항" class="nav-link" data-scroll-target="#참여자-선택에-관한-실제적인-고려사항">참여자 선택에 관한 실제적인 고려사항</a>
+  <li><a href="#설문-조사-또는-역학-연구-설계" id="toc-설문-조사-또는-역학-연구-설계" class="nav-link active" data-scroll-target="#설문-조사-또는-역학-연구-설계">(설문) 조사 또는 역학 연구 설계</a>
   <ul>
-  <li><a href="#목표-모집단-정의하기" id="toc-목표-모집단-정의하기" class="nav-link" data-scroll-target="#목표-모집단-정의하기">목표 모집단 정의하기</a></li>
-  <li><a href="#참여자-풀-만들기" id="toc-참여자-풀-만들기" class="nav-link" data-scroll-target="#참여자-풀-만들기">참여자 풀 만들기</a></li>
-  <li><a href="#참여자-선택하기" id="toc-참여자-선택하기" class="nav-link" data-scroll-target="#참여자-선택하기">참여자 선택하기</a></li>
-  <li><a href="#타당도-확립하기" id="toc-타당도-확립하기" class="nav-link" data-scroll-target="#타당도-확립하기">타당도 확립하기</a></li>
-  <li><a href="#참여자-수-결정하기" id="toc-참여자-수-결정하기" class="nav-link" data-scroll-target="#참여자-수-결정하기">참여자 수 결정하기</a></li>
+  <li><a href="#조사-연구의-예" id="toc-조사-연구의-예" class="nav-link" data-scroll-target="#조사-연구의-예">조사 연구의 예</a></li>
+  <li><a href="#조사-연구에서-설계-문제" id="toc-조사-연구에서-설계-문제" class="nav-link" data-scroll-target="#조사-연구에서-설계-문제">조사 연구에서 설계 문제</a></li>
   </ul></li>
-  <li><a href="#외적-타당도와-모집단-문제" id="toc-외적-타당도와-모집단-문제" class="nav-link" data-scroll-target="#외적-타당도와-모집단-문제">외적 타당도와 모집단 문제</a>
+  <li><a href="#변수-중심-연구-설계" id="toc-변수-중심-연구-설계" class="nav-link" data-scroll-target="#변수-중심-연구-설계">변수 중심 연구 설계</a>
   <ul>
-  <li><a href="#다른-모집단으로의-일반화-가능성을-조사하는데-고려할-점들" id="toc-다른-모집단으로의-일반화-가능성을-조사하는데-고려할-점들" class="nav-link" data-scroll-target="#다른-모집단으로의-일반화-가능성을-조사하는데-고려할-점들">다른 모집단으로의 일반화 가능성을 조사하는데 고려할 점들</a></li>
+  <li><a href="#단순-상관" id="toc-단순-상관" class="nav-link" data-scroll-target="#단순-상관">단순 상관</a></li>
+  <li><a href="#중다회귀-multiple-regression" id="toc-중다회귀-multiple-regression" class="nav-link" data-scroll-target="#중다회귀-multiple-regression">중다회귀 (multiple regression)</a></li>
+  <li><a href="#조절-효과와-매개-효과-검증-주요한-두-연구-방법" id="toc-조절-효과와-매개-효과-검증-주요한-두-연구-방법" class="nav-link" data-scroll-target="#조절-효과와-매개-효과-검증-주요한-두-연구-방법">조절 효과와 매개 효과 검증: 주요한 두 연구 방법</a></li>
+  <li><a href="#매개-변수" id="toc-매개-변수" class="nav-link" data-scroll-target="#매개-변수">매개 변수</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -316,9 +316,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/overview.html">Notes</a></li><li class="breadcrumb-item">Part 2</li><li class="breadcrumb-item"><a href="../contents/population.html">8장 모집단 문제</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/overview.html">Notes</a></li><li class="breadcrumb-item"><a href="../contents/true-experiments.html">Part 3</a></li><li class="breadcrumb-item"><a href="../contents/observation.html">13장 양적 기술 설계</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">모집단 문제 (8장)</h1>
+<h1 class="title">양적 기술 설계 (13장)</h1>
 <p class="subtitle lead">상담연구방법론, by Heppner, P. P., Wampold, B. E., Owen, J., Thopso, M. N.</p>
 </div>
 
@@ -348,330 +348,383 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>연구 결과가 다른 맥락에 얼마나 적용 가능할 것인가에 대한 물음<br>
-예를 들어,</p>
+<p>부제: 현상에 대한 기술, 설명, 예측</p>
 <ul>
-<li>치료에 관한 연구 결과가 정신건강 기관(mental health agencies)에서 볼 수 있는 유형의 환자들에게 적용 가능한가?</li>
-<li>결혼 만족도에 관한 연구가 다양한 민족이나 인종에게도 타당한 정보를 제공하는가?</li>
-<li>어떤 연구에 대학생 표본을 사용하는 것이 적절한가?</li>
+<li>실험적 조작없이 주로 수동적 관찰을 통한 자료 수집; observational study</li>
+<li>진실험/준실험과 구별되는 점을 파악하는 것으로 충분</li>
 </ul>
-<p><em>모집단의 문제가 <strong>연구 설계</strong>와 <strong>해석</strong>에 어떻게 악영향을 주는지에 대해 살펴봄</em></p>
-<section id="표본추출이론-sampling-theory" class="level2">
-<h2 class="anchored" data-anchor-id="표본추출이론-sampling-theory">표본추출이론 (Sampling Theory)</h2>
-<p>논리적으로 표현하면,</p>
+<p>대략적으로 나눈다면,</p>
 <ul>
-<li>연구자가 관심 있는 전체 집단을 <strong>모집단(population)</strong>이라고 보고,</li>
-<li>그 모집단에서 일부를 추출한 것을 <strong>표본(sample)</strong>으로 봄.</li>
-</ul>
-<p>예를 들어, 전국의 모든 대학생에 대해 관심이 있다면,</p>
+<li><strong>구체적 가설</strong>을 갖고 자료를 수집하고 분석하는 경우: 관찰 연구의 한계를 인식/극복
 <ul>
-<li>전국의 모든 대학생을 모집단으로 보고,</li>
-<li>그 중 일부를 추출한 대상을 표본으로 봄.</li>
-</ul>
-<p><strong>“편향(bias)”되지 않는 표본을 추출하는 것이 핵심임!</strong></p>
-<p>앞의 예에서 편향되지 않은 표본을 추출하기 위해서는(표본의 크기 100), 모든 대학생들이 <strong>동일한 확률</strong>로 표본에 포함될 수 있도록 장치를 마련해야 함.</p>
-<ul>
-<li>예를 들어, 전국 모든 대학생들의 명단을 확보한 후, 무작위로 100명을 선택하여, 연락 후 표본을 구해야 함: “무작위 추출(random sampling)”</li>
-<li>만약, 참여의사가 없는 학생을 제외한다면 편향이 생길 수 있음.</li>
-<li>응용연구에서 대부분 불가능한 조건임.</li>
-<li>특히, 상담연구에서는 어떤 지역에서 내담자를 선택할 정도만 되어도 운이 좋은 편임.</li>
-<li>대부분, 참여의사의 여부에 따르므로, 참여의사가 없는 대상들이 어떤 특징을 가질 수 있으므로 추론에 편향을 줄 수 있음.</li>
-</ul>
-<p>따라서, 현실적으로는</p>
-<ul>
-<li>구할 수 있는 표본이 관심이 있는 모집단을 얼마나 잘 대표할 수 있는가를 고민하거나,</li>
-<li>반대로, 표본으로부터 모집단을 어느 정도로 확대, 일반화 할 수 있는가를 추정해야 함.
-<ul>
-<li>예. 성소수자에 대한 연구를 하는데, 관찰할 수 있는 표본이 얼마나 성소수자를 대표할 수 있는가?</li>
-<li>반면, 성소수자 안에서도 구별될 수 있는 그룹이 존재할 수 있는가? 그렇다면, 관측값에 포함하여 비교하는 탐색적 과정이 필요함.</li>
+<li>인과추론의 목적을 갖고 적극적/체계적 설계</li>
+<li>실험 설계를 할 수 있는 연구들에 적용</li>
 </ul></li>
-<li>표본의 크기가 클수록 다양한 대상을 포함하기 때문에 대표성은 높아진다고 볼 수 있음.</li>
+<li><strong>탐색적인 방향성</strong>을 갖고 단순히 현상을 파악하거나 가설의 기초를 마련하는 경우
+<ul>
+<li>변수들의 관계성이나 변량의 특성을 보기 위한 시도</li>
+</ul></li>
 </ul>
-</section>
-<section id="참여자-선택에-관한-실제적인-고려사항" class="level2">
-<h2 class="anchored" data-anchor-id="참여자-선택에-관한-실제적인-고려사항">참여자 선택에 관한 실제적인 고려사항</h2>
-<section id="목표-모집단-정의하기" class="level3">
-<h3 class="anchored" data-anchor-id="목표-모집단-정의하기">목표 모집단 정의하기</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Colider Bias</strong><br>
+운동능력이 뛰어나면 지능이 떨어지는가? <img src="images/colider.png" class="img-fluid" width="350"></p>
+</div>
+</div>
+<p>실험적 조작 대신 <strong>평가/측정 도구</strong>의 질이 연구의 질을 결정함.<br>
+보통 큰 표본을 이용해 <strong>모집단에 대한 추론</strong>을 중요하게 여김.</p>
+<p>3가지로 유형/쓰임을 나누어 보면,</p>
 <ul>
-<li>모집단은 엄밀히는 관찰의 대상이 아니라 관찰값을 의미함.</li>
-<li>예를 들어, 설문을 한 대학생이 모집단이 아니고 그 대학생들으로부터 관측된 설문의 값(측정치)이 모집단임.</li>
-<li>하지만, 일반적으로 사람의 특성에 의해 정의됨</li>
-<li>예를 들어, 진단적 범주, 성별, 민족, 나이, 성적 지향, 출신 지역, 종교, 결혼 상태, 사회경제적 지위</li>
-<li>연구 주제에 영향을 미칠 수 있는 특성에 대해서 고려해야 함.</li>
+<li>조사 또는 역학 연구; survey or epidemiological study</li>
+<li>변수 중심 연구</li>
+<li>사람 중심 연구</li>
 </ul>
-<p><strong>모집단의 이질성 vs.&nbsp;동질성</strong></p>
+<section id="설문-조사-또는-역학-연구-설계" class="level2">
+<h2 class="anchored" data-anchor-id="설문-조사-또는-역학-연구-설계">(설문) 조사 또는 역학 연구 설계</h2>
+<p>Survey or epidemiological study</p>
 <ul>
-<li>모집단이 이질적일수록 일반화할 수 있는 범위가 넓어짐.</li>
-<li>예를 들어, 모집단을 학부생으로 제한하여 연구한다면 무직 노동자와 다른 집단의 우울증에 대해서도 그 효능이 있는지는 알 수 없음.</li>
-<li>하지만, 이질적인 대상들일 수록 대상들의 반응에는 변동성이 높아지고, 관측값들의 노이즈 혹은 오차 변량(error variance)가 커지게 되어 보고 싶은 관계가 덜 분명하게 나타남.</li>
-<li>예를 들어, 지역에 따른 차이가 존재할 때, 노이즈가 많아지나 이를 통제적으로 노이즈를 제거하여 관계를 분명히 할 수 있는 방법이 있음.<br>
-<img src="images/homogeneity.png" class="img-fluid" width="500"><br>
-</li>
-<li>처음부터 도시 거주민들만으로 제한하면 (동질적인 모집단) 관계는 분명해지나, 일반화할 수 있는 범위가 좁아짐.</li>
-<li>다양한 지역의 거주민들을 포함하면 (이질적인 모집단) 관계는 분명하지 않아지나 (통계적 보정으로 어느 정도 해결 가능), 일반화할 수 있는 범위가 넓어짐.</li>
+<li>사회과학에서 가장 오래되고 널리 활용</li>
+<li>보통 자기보고로 이루어짐</li>
+<li>설문지, 면접, 웹사트 등을 통해 자료 수집</li>
+<li><strong>기술(descriptive) 연구</strong>는 현상/변수에 대한 기본적 정보를 제공
+<ul>
+<li>대학 캠퍼스 내 범죄 빈도</li>
+<li>소수 민족의 정신건강</li>
+</ul></li>
+<li><strong>설명적(explanatory) 연구</strong>는 현상의 발생을 설명할 가능성이 있는 변수들을 파악하여 가설과 추측을 검증
+<ul>
+<li>대학 캠퍼스 내 범죄와 관련된 요인을 파악: 여성에 대한 신념, 신체 공격에 대한 신념</li>
+<li>소수 민족의 정신건강에 미칠 수 있는 요소들 파악: 문화적 동화, 사회 연결망</li>
+</ul></li>
 </ul>
-<p>미국의 대규모 심리치료 연구들도 종종 그 대상이 백인, 중산층 표본에 근거하고 있음.</p>
+<p>상담연구에서 조사 연구는 특정한 학생집단의 <strong>욕구</strong>를 조사하는데 많이 활용됨.</p>
 <ul>
-<li>다양한 집단에 대해서도 적용될지는 의문</li>
-<li>특히 건강 불평등의 차별적 문제에 대해 상담심리학자들이 관심이 요구됨.</li>
+<li>외국인 학생들의 상담 서비스 활용과 정신건강 욕구 조사 (Hyun, Quinn, Madon, &amp; Lustig, 2007)</li>
+<li>수감되어 있는 엄마들의 진로상담 욕구 조사 (Laux et al., 2011)</li>
 </ul>
-</section>
-<section id="참여자-풀-만들기" class="level3">
-<h3 class="anchored" data-anchor-id="참여자-풀-만들기">참여자 풀 만들기</h3>
-<p>모집단이 정의되면, 이 1) 정의에 부합하고 2) 구할 수 있는 사람들을 찾아야 함.<br>
-이 사람들을 참여자 풀(participant pool)이라고 함.</p>
+<p>욕구/지각의 <strong>변화</strong>를 알아보기 위한 <strong>종단 연구들</strong></p>
 <ul>
-<li>예를 들어, 목표 모집단이 대학 상담 센터의 내담자라면,</li>
-<li>참여자 풀은 종종 연구자 주변에서 구할 수 있는 참여자들로 제한됨.</li>
-<li>보통 이처럼 모집단을 대표하기 어려운 편향적인 참여자 풀로 구성됨.</li>
+<li>진로발달에 대한 연구로, 초등학교 2학년부터 고교 졸업 후 5년간 추적 조사 (Helwig, 2008)</li>
 </ul>
-<p>따라서, 이러한 제약이 연구 결과에 영향을 미치지 않는다는 증거를 제시해야 함; <strong>배경지식</strong>과 <strong>선행 연구</strong>를 바탕으로</p>
+<blockquote class="blockquote">
+<p><strong>Abstract</strong> (번역 by DeepL) 1987년, 208명의 고등학교 2학년 학생을 대상으로 직업에 대한 포부와 기대, 학교에 대한 호불호, 교육 계획 및 기타 변수에 대한 인터뷰를 실시했습니다. 고등학교 3학년이 될 때까지 2년마다 재인터뷰를 실시했습니다. 고등학교 졸업 후 5년 동안 추적 조사를 실시하여 원래 표본의 청년 35명(23세)이 자세한 설문지를 작성했습니다. 청년들은 고등학교 3학년이 되었을 때보다 고등학교 때 진로 방향과 준비가 현저히 적었다고 답했습니다. 같은 가족 내 3세대 간의 교육 및 직업 성취도에 대한 비교를 실시했습니다. 자녀의 진로 개발에서 교사와 부모의 중요성에 대해 논의했습니다.</p>
+</blockquote>
+<p>집단 간 비교 연구</p>
 <ul>
-<li>예를 들어, “신체적 스트레스에 대한 생리적 반응”에 대한 연구 vs.&nbsp;“낙태에 대한 태도” 연구</li>
-<li>전자는 지역에 따른 차이가 존재하지 않을 것이라고 예상할 수 있느나 후자는 큰 차이를 보일 것이라고 예상할 수 있음.</li>
+<li>다양한 인구학적 변수들에 걸쳐 수련생들의 자기효능감 수준을 조사 (Lam, Tracz와 Lucy, 2013)
+<ul>
+<li>아시아계와 백인 학생들이 다른 인종 집단보다 낮은 수준의 상담 자기효능감을 보고</li>
+</ul></li>
 </ul>
-<p>따라서 연구들이 반복적으로 특정 집단 특히, 소외된 집단을 배제되지 않도록 노력해야 함.</p>
-<p><strong>자발적 참여자</strong>의 특징</p>
+<p>역학 연구 (epidemiological study): 특정 집단 내 문제의 패턴, 원인, 결과를 연구</p>
 <ul>
-<li>참여자 풀은 사실 자발적 참여자들을 대상으로 하고 있다는 점에도 모두 편향성을 지님.</li>
-<li>높은 교육 수준, 사회적 인정에 대한 욕구, 지적이고, 덜 권위적이며, 적응을 잘하고, 자극을 추구하는 경향이 있음.</li>
+<li>공중보건 문제와 관련된 위험요인을 파악하기 위해 사용</li>
+<li>고전적 연구의 예: 콜레라
+<ul>
+<li>사망율이 높은 특정 지역을 파악하여, 감염의 발원을 추적해 특정 물 펌프가 원인임을 밝힘</li>
+</ul></li>
 </ul>
-<p>끝으로, 모집단의 정의에 맞는지를 검증하는 절차가 요구됨</p>
+<section id="조사-연구의-예" class="level3">
+<h3 class="anchored" data-anchor-id="조사-연구의-예">조사 연구의 예</h3>
+<p>라틴계 미국인의 정신건강과 관련된 요인들을 파악하기 위해 연구 자료를 활용 (Cook, Alegria, Lin &amp; Guo, 2009)</p>
 <ul>
-<li>예를 들어, 우울한 학생에 대한 연구에서 적어도 경증의 우울증을 가진 사람을 선별하기 위해 250명 이상의 학생들에게 벡 우울 질문지 검사를 수행</li>
-</ul>
-</section>
-<section id="참여자-선택하기" class="level3">
-<h3 class="anchored" data-anchor-id="참여자-선택하기">참여자 선택하기</h3>
-<p>참여자 풀에서 실제 참여자를 결정</p>
+<li>NLAAS(National Latino and Asian American Study)의 자료를 활용</li>
+<li>라틴계 이민자 vs 미국에서 태어난 라틴계 미국인
 <ul>
-<li>이상적으로는 참여자 풀에서 “무작위”로 선택</li>
-<li>현실적으로는 참여 가능한 참여자들로 구성됨</li>
-<li>예를 들어, 센터에 방문했던 모든 내담자를 연구에 참여하도록 요청
+<li>정신 장애 가능성을 예측</li>
+<li>미국 체류 기간이 길수록 정신 장애 가능성이 높아진다는 선행 연구</li>
+<li>2,554명의 다양한 라틴인들을 대상으로 여러 변수들을 측정</li>
+</ul></li>
+<li>이민자들이 차별에 대한 인식과 가족 갈등의 경험이 더 적었음
 <ul>
-<li>접수 면접에 온 520명 중 424명이 참여에 동의함.</li>
-<li>이들은 접수 면접 전에 시행된 설문조사에 응답하였으나,</li>
-<li>83명만이 사례가 종료된 후에도 설문조사에 응답함.</li>
+<li>미국에서의 긴 문화 간 상호작용과 불공평/차별적 대우로 인해 인식이 높아졌을 것으로 추론</li>
+<li>미국 문화에 조율된 가치와 규범을 발달시켜 가족 구성원과의 세대 간 갈등을 높혀 보호요인이었던 유대관계가 약화된 것으로 추론</li>
 </ul></li>
 </ul>
 </section>
-<section id="타당도-확립하기" class="level3">
-<h3 class="anchored" data-anchor-id="타당도-확립하기">타당도 확립하기</h3>
-<p>무작위 선택이 불가능한 경우도 연구의 목적을 달성하는데 “충분”하다고 볼 수 있는 근거를 마련할 수 있음.</p>
+<section id="조사-연구에서-설계-문제" class="level3">
+<h3 class="anchored" data-anchor-id="조사-연구에서-설계-문제">조사 연구에서 설계 문제</h3>
+<p>4가지 주요 활동:</p>
 <ul>
-<li>예를 들어, 직업 유형에 관한 이론은 개인의 경력 선택과 만족감이 그들의 성격 유형과 관련이 있다고 주장함.
+<li>모집단 정의하기</li>
+<li>질문지/측정 도구를 개발하거나 선택하기</li>
+<li>자료 수집 방법을 선택하고 개발하기</li>
+<li>자료 분석</li>
+</ul>
+<p><strong>모집단 정의하기</strong></p>
 <ul>
-<li>이 때는, “다양한 전공”을 가진 학부생을 대상으로 참여자를 선택하는 것은 적절함.</li>
+<li>보통 연구자는 미리 (실험 연구에서 처럼) 집단을 만들지 않음.</li>
+<li>비교를 위해 집단을 의도적으로 만들어 표집하기는 하지만, 무선 배정 같은 것은 없음.
+<ul>
+<li>예를 들어, 남/녀, interns vs practicum students, clinical psychology programs vs counseling psychology programs.</li>
 </ul></li>
-<li>반대로, 직업개발이론은 다양한 생애 단계와 진로 개발 과제를 연결하는데,
+<li>구할 수 있는 표본에 대해 연구를 실시하는 것이 일반적임.
 <ul>
-<li>이 때는, 대학생 표본을 선택하는 것은 부적절함.</li>
+<li>예, NLAAS의 경우, 라틴계와 아시아계 미국인을 대상</li>
 </ul></li>
-<li>또한, 동성애 혐오 피해에 관한 연구에서, 미국의 청소년을 대상으로 했는데,
+<li>실험적 조작이 없으나 설문에서 어느 정도 첨가할 수 있음
 <ul>
-<li>이는 중서부 지역의 백인 피해 청소년들의 심리사회적, 교육적 발달에 영향을 미친다는 결과는 보여주기에 충분함.</li>
+<li>서로 다른 질문 세트에 대해 반응을 비교</li>
+<li>온라인 서베이 툴의 경우 복잡한 flow를 제공</li>
 </ul></li>
 </ul>
-<p>따라서, 이상적인 표본을 선택할 수 없는 상황에서,<br>
-참여자들의 <strong>특성</strong>을 파악하여 적절한 가설의 모집단으로 일반화 할 수 있음을 보이도록 노력이 요구됨!</p>
-<p>특히, 범주적 상태에 따라 나뉘는 집단의 차이에 대해 일반화하는데 주의가 필요함.</p>
+<p><strong>질문지</strong></p>
 <ul>
-<li>예를 들어, 우울에 대한 종교 기반 행동 활성화 게임의 효능을 검증하는데, 50명 중 47명이 기독교인이었음.
+<li>보통, 기존의 신뢰할 만한 질문지를 활용</li>
+<li>새로운 문항을 개발하는 것은 쉽지 않음.</li>
+</ul>
+<p>문화적, 언어적, 경제적으로 다양한 사람들로 구성된 표본을 대상으로 한 측정의 어려움들</p>
 <ul>
-<li>종교 일반에 대한 일반화가 가능하려면, 인구에 포함된 종교의 비율과 <strong>동일한 비율</strong>의 표본이 이상적임.</li>
-<li>하지만, 적어도 이 연구는 기독교인에게는 효과가 있다는 것을 보여줌.</li>
-<li>후속연구에서 다른 종교인에 대한 효과를 검증하는 연구를 통해 보충할 수 있음.</li>
+<li>질문지를 현재 집단에 맞게 변경할지 고민
+<ul>
+<li>연구자가 의도한 방식대로 이해할까?</li>
+<li>질문의 포맷에 적절히 반응할까?</li>
+<li>특정 집단에게 무례한 질문일까?</li>
+<li>인터뷰를 포함한 예비조사(pilot study)를 통해 언어나 포맷을 검토/수정하는 것이 바람직</li>
 </ul></li>
-<li>두 인종, 백인과 흑인 청소년 간의 학업 성취도, 스트레스, 불안감을 비교했을 때,
+<li>모국어를 모르는 참여자들의 경우
 <ul>
-<li>두 집단 간의 차이는 인종의 문제로 귀결(귀인)될 수 없음!!!</li>
-<li>이런 성격의 집단 간의 비교는 무선 할당과 같은 실험적 연구로 수행될 수 없다는 점은 인과문제를 복잡하게 만듦.</li>
-<li>예를 들어, 두 집단은 사회경제적 지위, 가족 상태, 부모의 개입과 감독 정도, 지역사회의 범죄율 등의 요인들이 다를 수 있음: <strong>covariates</strong></li>
-<li>만약, 흑인들의 가난이 학업 성취도에 부정적으로 영향을 줬다면, 이는 가난의 차이로 인한 집단 간 차이임.</li>
-<li>이는 인종을 제외하고는 모든 다른 상태가 동일할 때에만 인종의 문제로 귀결할 수 있음.</li>
-<li>따라서, 그 요인을 모른다면, 위 연구는 일반화(외적 타당도)에도 제한이 될 수 밖에 없음; 예) 흑인이 부유한 지역에서는?</li>
+<li>번역/역번역을 통해 정확히 질문지를 번역</li>
+<li>문화적인 의미도 동일한지 이중언어 구사자의 검토가 필요</li>
 </ul></li>
 </ul>
-<p>따라서, 표본의 특성을 최대한 파악하고, 결과의 해석에서 여지를 줄이도록 노력해야 함!</p>
+<p><strong>자료 수집</strong></p>
+<p>현실적으로 접근 가능한 표본을 대상으로 수집하나 모집단을 잘 반영하는지 검토가 필요</p>
 <ul>
-<li>무수히 많은 특성이 존재하기는 하지만 연구 결과에 영향을 미칠 수 있는 특성들을 파악하도록 노력</li>
-<li>기본적으로 연령, 교육 수준, 사회경제적 지위, 성별, 이민자의 경우 언어 및 문화 동화 정도, 인종 정체성 발달 정도, 지리적 위치 등을 파악</li>
-<li>표본에 반드시 여성과 소수 인종/민족을 포함하도록 권고</li>
-<li>인종 소수자 및 경제적 불이익을 받는 집단에 대한 표본을 얻는 것이 어려우나, 이들에 대한 연구가 필요함. (지침서는 교재 참고)</li>
+<li>예를 들어, 라틴계 미국인의 심리적 장애를 탐구하려면, 표본이 성, 지역, 연령, 출신국, 사회경제적 지위 등에서 대표적이어야 함.</li>
+<li>또는 영어가 능숙한 사람들만을 초점을 맞춘다면, 이민자들이 배제되어 결과가 편향적일 수 있음.</li>
 </ul>
-<p>대부분의 심리학 연구가 세계 인구의 5%만을 차지하는 미국인을 표본으로 하고 있다는 점은 일반화에 대한 의구심을 충분히 제기할 수 있음.<br>
-세계의 다양한 집단에 대한 비교 연구에 대한 지침들이 제시되고 있음. (교재 참고)</p>
+<p>무선 표집(random sampling)이 이상적이나 현실적으로는 어려움.<br>
+층화 무선 표집(stratified random sampling)을 통해 모집단의 특성을 잘 반영하는 표본을 구성할 수 있음.</p>
+<ul>
+<li>예를 들어, 여성이 전체 55%를 차지한다면, 1000명의 표본에서는 여성이 550명를 차지하도록 함.</li>
+</ul>
+<p>자료 수집 방식</p>
+<ul>
+<li>가장 흔한 자료 수집은 자기보고식 질문지: 우편, 온라인 질문지
+<ul>
+<li>설문 응답율을 높이기 위해 노력: 독려 메세지 등</li>
+<li>최소 50% 회수율을 적절한 것으로 간주</li>
+</ul></li>
+<li>웹사이트를 이용
+<ul>
+<li>참여자 모집을 위해 발송되는 이메일을 누가 받고, 누구 읽었는지 알기 어려움</li>
+<li>참여율 확인이 어려움.</li>
+<li>자료 선별을 위해 준거에 맞는지 확인하는 변수들을 포함.</li>
+<li>설문을 주의 깊게 읽었는지는 확인하는 문항을 포함.</li>
+</ul></li>
+<li>크라우드소싱
+<ul>
+<li>온라인 커뮤니티(인력 풀)에서 참여자에게 부탁하여 자료를 수집</li>
+<li>아마존 MTurk, Prolific, Qualtrics Panels 등</li>
+<li>자료의 질에 대한 회의적 의견이 있음.
+<ul>
+<li>꽤 신뢰할 만하고 일관성 있음.</li>
+<li>한편, MTurk 참여자들이 내향적이고, 낮은 자아존중감을 보이며, 스트레스를 표현하려는 동기가 강한 것으로 나타남.</li>
+<li>연구의 핵심 준거에 맞도록 선별하는 작업이 필요.</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>소수자 집단을 대상으로 하는 경우,</p>
+<ul>
+<li>(백인 중류층을 대표하는) 연구자를 신뢰하지 않고, 좀 더 방어적일 수 있음.</li>
+<li>낮은 반응 비율의 원인을 파악할 필요.</li>
+</ul>
+<p><strong>자료 분석</strong></p>
+<ul>
+<li>우선적으로, 자료의 적절성을 평가: 표본이 모집단을 얼마나 반영하는가?
+<ul>
+<li>NLAAS에서는 센서스 자료와 비교되었음.</li>
+</ul></li>
+<li>종단 연구의 경우, 중도탈락한 사람들에 대한 검토가 중요
+<ul>
+<li>예를 들어, 대학생의 경우, 성, 학년, 전공, 학점 등에게 다른가?</li>
+</ul></li>
+<li>NLAAS와 같은 대규모 국가적 조사의 활용
+<ul>
+<li>지역 코드나 주소가 있다면, 참여자 동네 대한 인구학적 정보를 활용할 수 있음: 인구, 소수자 비율, 수입, 교육 수준 등</li>
+<li>새로운 자료를 수집할 필요없이 여러 연구를 수행할 수 있음
+<ul>
+<li>NLAAS은 50편이 넘는 출판물을 내었음.</li>
+</ul></li>
+</ul></li>
+</ul>
 </section>
-<section id="참여자-수-결정하기" class="level3">
-<h3 class="anchored" data-anchor-id="참여자-수-결정하기">참여자 수 결정하기</h3>
+</section>
+<section id="변수-중심-연구-설계" class="level2">
+<h2 class="anchored" data-anchor-id="변수-중심-연구-설계">변수 중심 연구 설계</h2>
 <ul>
-<li>표본 데이터로부터 얻은 효과가 모집단에서도 그대로 유효할지에 대해 <strong>확신(확률)</strong>을 높이려면 <strong>“표본의 크기”</strong>가 클수록 유리함.</li>
-<li>또한, 그 <strong>“효과”</strong>가 진실로 크다면, 표본의 크기가 작아도 높은 <strong>확신(확률)</strong>을 가질 수 있음.</li>
-<li>즉, 모집단에서도 효과가 존재한다고 추론하려면(효과가 없다는 가정을 기각하려면), 원래 효과가 크거나 수집한 표본이 크거나 이 둘의 조합이 중요한 요소임.</li>
-<li>효과가 아무리 미미해도 표본의 크기가 충분히 커지면 “효과가 없다는 가정”을 기각할 수 있음. 즉, 통계적으로 “유의(significant)”해짐.</li>
-<li>그 외의 여러 요소가 있음: 모형의 복잡성, 통계적 모형의 특성, 변수들 간의 공변성 등등</li>
-<li>사실, “효과”를 정의하는 것도 쉽지 않음.</li>
+<li>변수 간의 진실한 관계를 파악</li>
+<li>통계 기법의 도움을 받아 인과 관계를 추론하려고 노력
+<ul>
+<li>통계적 통제(statistical control)를 통해 confounding을 제거하려고 노력</li>
+<li>인과 구조에 대한 통계적 모형을 세워 자료와 일치하는지 검증: 구조방정식 모형 (SEM)</li>
+</ul></li>
+<li>넓게는 인과분석(causal analaysis)의 툴이 요구됨</li>
 </ul>
-<p><img src="images/sampling_MF.png" class="img-fluid" width="380"></p>
+<section id="단순-상관" class="level3">
+<h3 class="anchored" data-anchor-id="단순-상관">단순 상관</h3>
+<p>두 변수 간의 선형적 관계를 파악: Pearson correlation coefficient (<span class="math inline">\(r\)</span>)</p>
 <div>
 
 </div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
+</section>
+<div class="quarto-layout-panel" data-layout="[45, 5, 45]">
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<figure class="figure">
-<figcaption>   Sample size: 20</figcaption>
-<p><img src="images/sampling-error2.png" class="img-fluid figure-img" width="450"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<figure class="figure">
-<figcaption>   Sample size: 200</figcaption>
-<p><img src="images/sampling-error1.png" class="img-fluid figure-img" width="450"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>만약, 연구 결과에서 나올 효과의 크기를 가늠할 수 있다면, 최소한의 표본의 크기를 대략 정할 수 있음.</p>
+<div class="columns quarto-layout-cell" style="flex-basis: 47.4%;justify-content: center;">
+<section id="pearsons-correlation-coefficient-r" class="level3">
+<h3 class="anchored" data-anchor-id="pearsons-correlation-coefficient-r">Pearson’s correlation coefficient: <span class="math inline">\(r\)</span></h3>
+<p>Linear relationships을 측정</p>
 <ul>
-<li>선행 연구로부터 추론하는 방법</li>
-<li>실질적/임상적 중요성을 가진다고 여겨지는 효과의 크기를 규정하는 방법</li>
-<li>종종 제시되는 어림짐작(a rule of thumb)에 대한 방법은 조심히 사용할 것.</li>
-<li>표본의 크기를 결정해주는 프로그램이 있음.</li>
+<li>x와 y의 선형적 연관성: [-1, 1]<br>
+</li>
+<li>x로부터 y를 얼마나 정확히 예측가능한가?</li>
+<li>x와 y의 정보는 얼마나 중복(redundant)되는가?</li>
 </ul>
+<p><img src="images/pearson-r.png" class="img-fluid" width="440"></p>
 </section>
-</section>
-<section id="외적-타당도와-모집단-문제" class="level2">
-<h2 class="anchored" data-anchor-id="외적-타당도와-모집단-문제">외적 타당도와 모집단 문제</h2>
-<p><em>사람 변수(person variable)</em>의 범주에 따라 다른 효과가 나타나는지는 흥미로운 관심사이며,<br>
-상담 분야에서 관심사가 높아짐.</p>
+</div>
+<div class="columns quarto-layout-cell" style="flex-basis: 5.3%;justify-content: center;">
+<p><br></p>
+</div>
+<div class="columns quarto-layout-cell" style="flex-basis: 47.4%;justify-content: center;">
+<section id="multiple-correlation-coefficient-r" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-correlation-coefficient-r">Multiple correlation coefficient: <span class="math inline">\(R\)</span></h3>
+<p>Extented correlation: 예측치와 관측치의 pearson’s correlation</p>
 <ul>
-<li>성별, 인종, 민족성</li>
-<li>성적 지향, 국적, 종교, 사회적 지위, 장애 여부 등</li>
+<li><span class="math inline">\(R\)</span>을 제곱한 <span class="math inline">\(R^2\)</span>가 설명력의 정도를 나타냄</li>
 </ul>
-<p>예를 들어, 처치의 효과가 남성에게만 나타난다면, 모집단(사람/남성/여성?)에 대해 어떻게 기술할 것인가?</p>
+<p><img src="images/multiple-R.png" class="img-fluid" width="440"></p>
+</section>
+</div>
+</div>
+</div>
+<p><span class="math inline">\(R^2\)</span>: <strong>그 관계의 크기(strength)를 측정</strong></p>
+<ul>
+<li><span class="math inline">\(f\)</span>에 의해 <span class="math inline">\(X\)</span>로 <span class="math inline">\(Y\)</span>를 얼마나 정확히 예측할 수 있는가?</li>
+<li><span class="math inline">\(f\)</span>에 의해 <span class="math inline">\(X\)</span>의 변량이 <span class="math inline">\(Y\)</span>의 변량을 얼마나 설명할 수 있는가?</li>
+</ul>
 <div>
 
 </div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-panel" data-layout="[[1, 1]]">
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="images/RCT2.png" class="img-fluid" width="400"></p>
+<div class="columns quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/r2.png" class="img-fluid" width="440"></p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="images/interaction.png" class="img-fluid" width="400"></p>
+<div class="columns quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/mr2.png" class="img-fluid" width="440"></p>
 </div>
 </div>
 </div>
+<section id="중다회귀-multiple-regression" class="level3">
+<h3 class="anchored" data-anchor-id="중다회귀-multiple-regression">중다회귀 (multiple regression)</h3>
+<p>2개 이상의 예측변수로 종속변수를 예측</p>
 <ul>
-<li>위와 같은 효과가 있을 때, 이를 통계에서 <strong>“상호작용 효과”</strong>라고 함.<br>
-</li>
-<li>성별과 처지가 상호작용하여 효과를 나타낸다는 것을 의미함.<br>
-</li>
-<li>성별을 조절변수(moderator)라고도 부름.</li>
+<li>보통 독립변수(independent variable)를 예측변수(predictor)로 많이 부름</li>
+<li>종속변수(dependent variable)는 종종 반응변수(response, outcome variable) 또는 준거변수(criterion)로 부름</li>
+<li>회귀분석은 <strong>상관관계에 기초</strong>하기는 하지만, 인과관계를 추론하기 위한 툴이므로, 원인과 결과에 대해 전제하고 분석함.</li>
+<li>회귀분석으로부터 인과관계를 파악하는 것은 많은 노력을 요함.</li>
 </ul>
-<p>예를 들어, 상담사들의 국가 간 문화 역량(Cross-National Cultural Competence: CNCC)에 관한 모형에서,</p>
+<p><img src="images/multiple-regression.png" class="img-fluid" width="750"><br>
+Source: <em>Applied Multiple Regression/Correlation Analysis for the Behavioral Sciences</em> by Jacob Cohen, Patricia Cohen, Stephen G. West, Leona S. Aiken</p>
+<p><strong>Asner-Self &amp; Marotta (2005)의 연구</strong></p>
 <ul>
-<li>personality/attitudinal/coping variables;</li>
-<li>immersion experiences;</li>
-<li>cognitive and affect processing of cultural encounters;</li>
-<li>cross-cultural knowledge, awareness, and skills;</li>
-<li>the larger ecosystem (cultural context) surrounding the individual.</li>
+<li>전쟁 관련 외상에 노출되었던 68명의 중앙아메리카 이민자들을 대상</li>
+<li>심리적 스트레스(우울, 불안, 외상성 스트레스)(DV)에 대한 예측변수들(IV)을 검증: 1) 불신, 2) 정체성 혼란, 3) 고립</li>
+<li>세 하위 척도 각각이 다른 두 하위척도와는 독립적인(independent)/고유한(unique) 심리적 스트레스에 주는 영향을 파악할 수 있음.</li>
 </ul>
-<p><img src="images/CNCC.png" class="img-fluid" width="400"></p>
-<p>Heppner, P. P., &amp; Wang, K. T. (2014). A cross-cultural immersion program: Promoting students’ cultural journeys. The Counseling Psychologist, 42(8), 1159-1187.</p>
-<p>개입의 효과를 연구할 때, 개인 및 환경 요인을 고려하는 것이 중요함.</p>
+<p><img src="images/Asner.png" class="img-fluid" width="800"></p>
+<p><strong>Pina-Watson, Jimenez &amp; Ojeda (2014)의 연구</strong></p>
 <ul>
-<li>예를 들어, 문화 역량을 증진시키는 프로그램에서 인종/민족성에 따라 다른 효과가 나타났음. (상호작용)</li>
-<li>낮은 수준의 훈련을 받은 경우, 소수 인종 훈련생이 백인 훈련생에 비해 유의하게 높은 다문화 인식을 보였음.</li>
-<li>높은 수준의 훈련을 받은 경우, 소수 인종과 백인 훈련생 간의 유의한 차이가 없었음.</li>
-</ul>
-<section id="다른-모집단으로의-일반화-가능성을-조사하는데-고려할-점들" class="level3">
-<h3 class="anchored" data-anchor-id="다른-모집단으로의-일반화-가능성을-조사하는데-고려할-점들">다른 모집단으로의 일반화 가능성을 조사하는데 고려할 점들</h3>
-<p><strong>1. 모집단의 특성을 규정하는 무수한 변수들 중 어떤 것을 선택할 것인가?</strong></p>
-<p>무수한 조사되지 않은 person, setting, time(generation/cohort) 변수들 중 어느 것이 상호작용적으로 효과에 영향을 줄 지 알 수 없으며, 무엇을 선택해야 하는지는 매우 어려운 일임.</p>
+<li>멕시코계 미국인 여대생을 대상으로</li>
+<li>&nbsp;1) 진로결정 자기효능감, 2) 지각된 교육 관련 장벽, 3) 독립적 자기-구인(independent self-construal)(IVs)이 삶의 만족(DV)을 얼마나 예측하는가를 검증</li>
+<li>이 때, 사회경제적 지위(SES)와 세대 지위(genertional status)가 설명하는 것 이상으로 DV를 설명하는지 검증
 <ul>
-<li>성별, 민족, 성적 지향, 사회경제적 지위, 인종, 나이, 장애 정도, 지능, 성격 유형, 진료소의 유형 등</li>
-<li>각 분야의 지식이나 상식에 입각해 영향의 유무를 결정하고 연구에 포함할 것.</li>
-</ul>
-<p>이런 객관적으로 보이는 변수들에 대한 <strong>정의와 구성개념(construct)</strong>에 좀 더 주의를 기울일 필요가 있음.</p>
-<ul>
-<li>예를 들어, 인종(race)의 개념은 여전히 모호하며 논쟁의 여지가 있음.</li>
-<li>성별의 개념은 다소 더 명확한 반면, 그 구성개념이 실질적으로 더 중요할 수 있음.
-<ul>
-<li>생물학적 성별보다는 “성 역할 지향”이 더 중요할 수 있음.</li>
-</ul></li>
-<li>민족에 대해서도 “문화에 동화된 정도(acculturation)”나 “민족 정체성(ethnic identity)”이 더 중요할 수 있음.</li>
-</ul>
-<p>상담 영역에서 이런 요인들이 행동이나 연구에 미치는 영향을 연구하는 것이 중요함.</p>
-<ul>
-<li>예를 들어, 양육 방식과 가족 관계가 문화에 따라 상이할 수 있으며, 심리적 안녕감에 다른 효과를 미칠 수 있음.</li>
-<li>이는 구체적인 인종(예, 흑인)이 지니는 특성한 구성개념을 이해하는 연구는 단순히 인종 간 차이를 비교하는 연구와는 전혀 다름.</li>
-</ul>
-<p><strong>2. 집단 간 차이에 내재하는 과정을 이해하는 것의 중요성</strong></p>
-<p>예전부터 단순한 집단 간 비교는 유용성이 제한되며, 편견을 양산할 수 있음이 지적되어 왔음.</p>
-<ul>
-<li>흑인과 백인 청소년 간의 불안감, 학업 성취도 등</li>
-<li>인종/성별 간 지능 비교</li>
-</ul>
-<p>집단 간 차이를 발생시키는 이유를 이해하는 것이 연구의 목적:<br>
-집단 내부의 어떠한 차이가 그 집단 간 차이를 발생시키지 대한 심리적 과정을 이해하는 것이 중요함.</p>
-<p>예를 들어, 구성개념 “반사회적 행동”에서 두 집단 A, B가 차이(A &gt; B)가 난다고 하면,</p>
-<ul>
-<li>반사회적 행동으로 이끄는 요인들이 두 집단에서 동일하게 작동하고 있는가?</li>
-<li>만약, 부적절한 부모 감독이 반사회적 행동의 중요한 “인과적 구성개념”임이 밝혀져 있다면,</li>
-<li>A 집단에서 반사회성이 높은 이유가 부적절할 부모 감독 때문인지, A 집단에만 영향을 주는 다른 요인이 있는지를 탐구해야 함.</li>
-<li>실제로, 인종 간에 발달 과정(developmental processes)이 다르지 않다는 증거를 제시했고, 인종 간 보이는 성취도나 비행 행동의 차이는 발달 과정에서 다른 pathway를 거치게 만드는 요인들 때문임을 시사함. (Rowe, Vazsonyi, and Flannery (1994))</li>
-<li>즉, 인종의 고유한 차이라기 보다는 그 이면의 과정으로부터 비롯된 차이임.</li>
-</ul>
-<p>또 다른 예로는, 직업적 흥미에 관한 모형에서 여러 문화간에 흥미와 그 구조의 유사성을 발견하였는데,</p>
-<ul>
-<li>후속 연구에서 문화적 차이가 왜 발생할 수 있는지에 대한 요인들을 살펴봄.</li>
-</ul>
-<p>또한, 상담자와 내담자 간에 회기에 대한 평가가 다르다는 것을 발견하였는데,</p>
-<ul>
-<li>이 두 그룹 간에 평가에 영향을 주는 다른 요인이 존재할 수 있음을 밝힘.</li>
-<li>모두에게 환자의 참여도와 호전된 정도가 평가와 정적인 관계를 가졌으나,</li>
-<li>내담자의 경우, 상담자에 대한 “interpersonal style” &amp; “real relationship”이 정적인 예측 요인으로,</li>
-<li>상담자의 경우, “expertness”가 정적인 예측 요인으로, “real relationship”이 부적인 예측 요인으로 밝혀짐.</li>
-</ul>
-<p><strong>3. 표본에서 다양한 집단들의 구성 비율</strong></p>
-<ul>
-<li>상정한 모집단으로 일반화하기 위해서는 표본에서도 그 모집단과 유사한 비율로 집단들이 포함되어야 함.
-<ul>
-<li>예를 들어, 남녀의 경우 대략 동일한 비율로 표집되어야 함.</li>
-<li>미국에서 백인과 미국 인디언의 수는 미국 전체를 대표할 수 있도록 비율을 정해야 함.</li>
-</ul></li>
-<li>하지만, 그룹 간의 차이를 비교하는 연구라면 동일한 비율로 표집하는 것이 바람직.
-<ul>
-<li>종교에 따른 차이를 보려면, 각 종교별 동일한 수의 참여자를 포함하는 것이 통계적으로 유리함.</li>
+<li>Generational status: 1st: immigrants, 2nd: (U.S. born, parents were immigrants), 3th (parents were U.S. born), 4th: (grandparents were U.S. born), 5th: (great grandparents were U.S. born)</li>
 </ul></li>
 </ul>
-<p><strong>4. 다양한 계층의 사람들을 포함하는 것의 함의</strong></p>
+<p><img src="images/Pina.png" class="img-fluid" width="550"></p>
+<p>  <img src="images/Pina2.png" class="img-fluid" width="500"></p>
+</section>
+<section id="조절-효과와-매개-효과-검증-주요한-두-연구-방법" class="level3">
+<h3 class="anchored" data-anchor-id="조절-효과와-매개-효과-검증-주요한-두-연구-방법">조절 효과와 매개 효과 검증: 주요한 두 연구 방법</h3>
+<p>모두 회귀분석의 원리를 응용한 것임.</p>
+<p><strong>조절 변수</strong></p>
 <ul>
-<li>보통 연구들은 우세한 표본을 대상으로 함.</li>
-<li>소수의 표본을 포함하고 비교하더라도, 다수를 기준으로 소수가 어떻게 대조되는지에 초점.</li>
-<li>각 집단은 동질적이라는 가정을 하고 있음.
+<li>조절 변수(moderator)가 종속변수와 독립변수 간의 관계에 영향을 미치는 경우</li>
+<li>상호작용 효과(interaction effect)이라고도 함.</li>
+<li>이러한 분석이 상관관계에 기초한다는 점에서 항상 인과관계에 대해서는 더 깊은 연구가 필요함!</li>
+</ul>
+<p>고전적 예:</p>
 <ul>
-<li>흑인의 경우에도 여러 다양한 집단이 존재함.</li>
-<li>문화 동화 정도(accuturation), 인종/민족 정체성, 세대 상태(generational status) 등</li>
-<li>이러한 다양성을 고려하는 것이 중요함.</li>
-</ul></li>
-<li>집단 간 비교보다는 그 집단 문화 특수적 현상을 탐구할 필요가 있음
+<li>“부정적 사건과 우울 사이의 관계를 사회적 지지가 조절할 것으로 예측한다.”
 <ul>
-<li>예를 들어, 소수 인종들이 정신건강 클리닉을 충분히 이용하지 않는데, 이는 인종 내 과정을 탐구해 이해할 필요가 있음.</li>
-<li>예를 들어, 상담에 대한 태도, 차별에 대한 인식, 낙인, 접근성 등</li>
+<li>사회적 지지가 높을수록, 부정적 사건이 우울로 덜 이어질 것임.</li>
+<li>즉, 사회적 지지가 두 변수 간의 관계를 “조절(moderate)”한다고 표현</li>
+<li>혹은 사회적 지지와 부정적 사건이 “상호작용(interact)”하여 우울에 영향을 미친다고 표현 <img src="images/moderator3.png" class="img-fluid" width="350"></li>
+<li>특히 이 경우는 사회적 지지가 “보호 요인(protective factor)”이라고 표현; 반대는 “위험 요인(risk factor)”이라고 표현</li>
 </ul></li>
 </ul>
-<p><strong>5. 다양한 연구를 통한 외적 타당도의 확보</strong></p>
-<p>체계적 반복검증: 단일 요소를 달리하여 실험을 반복</p>
+<p>앞서 본 상호작용 효과 예들: 조절 변수가 <strong>범주형 변수</strong>인 경우</p>
 <ul>
-<li>집단 연구에 적용해보면, 예를 들어, 남성 참여자들만/여성 참여차들만의 집단으로 연구</li>
-<li>독립된 연구이기 때문에, 두 집단 간 차이는 성별에 따른 차이가 아닌 다른 요인들에 기인할 여지가 있음.</li>
-<li>또한 상호작용의 효과 크기도 추정하기 어려움.</li>
+<li><a href="https://chard.modellings.art/contents/true-experiments.html#요인-설계-factorial-design">요인 설계</a></li>
+<li><a href="https://chard.modellings.art/contents/overview.html#case-2">성별에 따라 달라지는 효과</a></li>
 </ul>
-<hr>
-<p>9장 다양성 관점: 개념적, 방법론적 고려 참고</p>
+<p><strong>Wei, Wang, Hwppner와 Du (2012)의 연구</strong></p>
+<ul>
+<li>383며의 중국인 유학생을 대상으로 인종적 차별의 경험을 PTSD로 이해하고 그 부정적 효과의 보호요인을 연구</li>
+<li>(미국) 주류사회와 사회적 연결감(mainstream social connectedness) vs.&nbsp;(중국) 민족적 사회적 연결감(ethnic social connectedness): acculturation(문화 적응)과 관련된 요인들</li>
+<li>이 때, 일반적 스트레스(general stress)를 <strong>뛰어 넘어서 (above and yond)</strong>도 여전히 차별이 PTSD를 높이는지 검증
+<ul>
+<li>또는 일반적 스트레스와는 독립적인/고유한(unique) 효과가 있는지 검증</li>
+</ul></li>
+</ul>
+<p><img src="images/Wei.png" class="img-fluid" width="850"></p>
+</section>
+<section id="매개-변수" class="level3">
+<h3 class="anchored" data-anchor-id="매개-변수">매개 변수</h3>
+<ul>
+<li>독립변수가 종속변수에 어떻게(how) 영향을 주는지를 파악. 즉, 기제(메커니즘)을 파악</li>
+<li>매개 효과는 인과에 대한 강력한 주장을 하는 것이므로, 많은 검증을 요함.
+<ul>
+<li>추가적 실험 설계나 사전 연구들로 보완해야 함.</li>
+</ul></li>
+<li>기제를 파악하는 것은 (상담) 개입의 효과가 어떻게 일어나는지에 대한 핵심 요소를 규정할 수 있고, 변화과정을 최적화 할 수 있도록 도움을 줌.</li>
+<li>통계적 기법이 여러 가지로 제안되어 있음.</li>
+<li>좀 더 일반적으로 여러 변수 간의 인과 구조를 파악하는 SEM(structural equation modeling)의 프레임워크로 분석함.</li>
+<li>이러한 분석이 기본적으로는 상관관계에 기초한다는 점에서 항상 인과관계에 대해서는 더 깊은 연구가 필요함</li>
+</ul>
+<p><strong>Moradi와 Hasan (2004)의 연구</strong></p>
+<ul>
+<li>아랍계 미국인을 대상으로 차별의 경험이 자아존중감/심리적 스트레스을 어떻게 변화시키는지를 검증</li>
+<li>개인 통제 (personal contol)가 상실됨에 따른 결과라고 추론</li>
+</ul>
+<p><img src="images/Moradi-1.png" class="img-fluid" width="550"> <img src="images/Moradi-2.png" class="img-fluid" width="550"></p>
+<p><strong>Wei, Vogel, Ku,와 Zakalik (2005)의 연구</strong></p>
+<ul>
+<li><strong>불안 하위 척도</strong>(18개 항목): 거절에 대한 두려움과 버려짐에 대한 강박관념을 측정; “나는 버려질까 봐 걱정된다.”</li>
+<li><strong>회피 하위 척도</strong>(18개 항목): 친밀감에 대한 두려움과 타인과 가까워지는 것에 대한 불편함 또는 의존성을 평가; “나는 파트너가 나에게 너무 가까이 다가오면 긴장한다.”</li>
+<li><strong>감정 반응성 하위 척도</strong>(11개 항목): 환경 자극에 감정이 넘치거나, 감정이 불안정하거나, 과민하게 반응하여 감정에 휩쓸릴 정도로 반응하는 정도를 반영; “때때로 나는 마치 감정의 롤러코스터를 타는 것처럼 느낀다.”</li>
+<li><strong>정서적 단절 하위 척도</strong>(12개 항목): 내면의 감정 경험이나 대인관계가 너무 강렬할 때 친밀감에 위협을 느끼고 타인과 자신의 감정으로부터 자신을 고립시키는 것을 반영; “나는 가족 중 누구에게도 정서적 지원을 요청하는 것을 고려하지 않는다.” (번역 by DeepL)</li>
+</ul>
+<p><img src="images/Wei-Vogel.png" class="img-fluid" width="600"></p>
+<p>SEM (구조방정식 모형): 변수들 간의 인과 관계에 대한 가설 모형</p>
+<p><img src="images/sem-alcohol.png" class="img-fluid" width="550"></p>
+<p>Martens, M. P. (2005). The use of structural equation modeling in counseling psychology research. The Counseling Psychologist, 33(3), 269–298.</p>
+<ul>
+<li>치료적 변화의 기제를 설명하는 타당한 증거를 제시하는 과정은 복잡하고 일련의 연구를 요함.</li>
+<li>인과관계에 대해서는 실험 조작과 반복 검증을 통해 그 확신을 높일 수 있음.</li>
+<li>Kazdin(2009)의 7가지 제안 및 논의를 참고</li>
+</ul>
 
 
 </section>
@@ -1088,14 +1141,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../contents/validity4.html" class="pagination-link  aria-label=" 외적="" 타당도"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">외적 타당도</span>
+      <a href="../contents/quasi-experiments.html" class="pagination-link  aria-label=" 12장="" 준실험과="" 종단="" 설계"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">12장 준실험과 종단 설계</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../contents/scale.html" class="pagination-link" aria-label="10장 척도개발">
-        <span class="nav-page-text">10장 척도개발</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

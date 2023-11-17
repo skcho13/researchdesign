@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.489">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -31,6 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../contents/analogue.html" rel="next">
 <link href="../contents/quasi-experiments.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -47,13 +48,7 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -79,12 +74,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/overview.html">Notes</a></li><li class="breadcrumb-item"><a href="../contents/true-experiments.html">Part 3</a></li><li class="breadcrumb-item"><a href="../contents/observation.html">13장 양적 기술 설계</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/overview.html">Notes</a></li><li class="breadcrumb-item"><a href="../contents/true-experiments.html">Part 3</a></li><li class="breadcrumb-item"><a href="../contents/observation.html">13장 양적 기술 설계</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -94,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../">CHA Research Design</a> 
@@ -266,6 +261,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">13장 양적 기술 설계</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/analogue.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14장 모의 연구</span></a>
+  </div>
+</li>
       </ul>
   </li>
       </ul>
@@ -291,7 +292,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -310,13 +311,19 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#조절-효과와-매개-효과-검증-주요한-두-연구-방법" id="toc-조절-효과와-매개-효과-검증-주요한-두-연구-방법" class="nav-link" data-scroll-target="#조절-효과와-매개-효과-검증-주요한-두-연구-방법">조절 효과와 매개 효과 검증: 주요한 두 연구 방법</a></li>
   <li><a href="#매개-변수" id="toc-매개-변수" class="nav-link" data-scroll-target="#매개-변수">매개 변수</a></li>
   </ul></li>
+  <li><a href="#사람-중심-연구-설계" id="toc-사람-중심-연구-설계" class="nav-link" data-scroll-target="#사람-중심-연구-설계">사람 중심 연구 설계</a>
+  <ul>
+  <li><a href="#군집-분석" id="toc-군집-분석" class="nav-link" data-scroll-target="#군집-분석">군집 분석</a></li>
+  <li><a href="#잠재-범주프로파일-분석" id="toc-잠재-범주프로파일-분석" class="nav-link" data-scroll-target="#잠재-범주프로파일-분석">잠재 범주/프로파일 분석</a></li>
+  <li><a href="#성장-혼합-모델링" id="toc-성장-혼합-모델링" class="nav-link" data-scroll-target="#성장-혼합-모델링">성장 혼합 모델링</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../contents/overview.html">Notes</a></li><li class="breadcrumb-item"><a href="../contents/true-experiments.html">Part 3</a></li><li class="breadcrumb-item"><a href="../contents/observation.html">13장 양적 기술 설계</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">양적 기술 설계 (13장)</h1>
 <p class="subtitle lead">상담연구방법론, by Heppner, P. P., Wampold, B. E., Owen, J., Thopso, M. N.</p>
@@ -344,9 +351,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-
 </header>
-
 
 <p>부제: 현상에 대한 기술, 설명, 예측</p>
 <ul>
@@ -573,11 +578,8 @@ Note
 <section id="단순-상관" class="level3">
 <h3 class="anchored" data-anchor-id="단순-상관">단순 상관</h3>
 <p>두 변수 간의 선형적 관계를 파악: Pearson correlation coefficient (<span class="math inline">\(r\)</span>)</p>
-<div>
-
-</div>
 </section>
-<div class="quarto-layout-panel" data-layout="[45, 5, 45]">
+<div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="columns quarto-layout-cell" style="flex-basis: 47.4%;justify-content: center;">
 <section id="pearsons-correlation-coefficient-r" class="level3">
@@ -612,10 +614,7 @@ Note
 <li><span class="math inline">\(f\)</span>에 의해 <span class="math inline">\(X\)</span>로 <span class="math inline">\(Y\)</span>를 얼마나 정확히 예측할 수 있는가?</li>
 <li><span class="math inline">\(f\)</span>에 의해 <span class="math inline">\(X\)</span>의 변량이 <span class="math inline">\(Y\)</span>의 변량을 얼마나 설명할 수 있는가?</li>
 </ul>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout="[[1, 1]]">
+<div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="columns quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="images/r2.png" class="img-fluid" width="440"></p>
@@ -660,7 +659,7 @@ Source: <em>Applied Multiple Regression/Correlation Analysis for the Behavioral 
 <p>모두 회귀분석의 원리를 응용한 것임.</p>
 <p><strong>조절 변수</strong></p>
 <ul>
-<li>조절 변수(moderator)가 종속변수와 독립변수 간의 관계에 영향을 미치는 경우</li>
+<li>조절 변수(moderator): 종속변수와 독립변수 간의 관계에 영향을 미치는 변수</li>
 <li>상호작용 효과(interaction effect)이라고도 함.</li>
 <li>이러한 분석이 상관관계에 기초한다는 점에서 항상 인과관계에 대해서는 더 깊은 연구가 필요함!</li>
 </ul>
@@ -681,7 +680,7 @@ Source: <em>Applied Multiple Regression/Correlation Analysis for the Behavioral 
 </ul>
 <p><strong>Wei, Wang, Hwppner와 Du (2012)의 연구</strong></p>
 <ul>
-<li>383며의 중국인 유학생을 대상으로 인종적 차별의 경험을 PTSD로 이해하고 그 부정적 효과의 보호요인을 연구</li>
+<li>383명의 중국인 유학생을 대상으로 인종적 차별의 경험을 PTSD로 이해하고 그 부정적 효과의 보호요인을 연구</li>
 <li>(미국) 주류사회와 사회적 연결감(mainstream social connectedness) vs.&nbsp;(중국) 민족적 사회적 연결감(ethnic social connectedness): acculturation(문화 적응)과 관련된 요인들</li>
 <li>이 때, 일반적 스트레스(general stress)를 <strong>뛰어 넘어서 (above and yond)</strong>도 여전히 차별이 PTSD를 높이는지 검증
 <ul>
@@ -710,20 +709,165 @@ Source: <em>Applied Multiple Regression/Correlation Analysis for the Behavioral 
 </ul>
 <p><img src="images/Moradi-1.png" class="img-fluid" width="550"> <img src="images/Moradi-2.png" class="img-fluid" width="550"></p>
 <p><strong>Wei, Vogel, Ku,와 Zakalik (2005)의 연구</strong></p>
+<p>애착을 척도 Experiences in Close Relationships Scale (ECRS; Brennan et al., 1998)로 측정 후 2개의 요인으로 나누어 불안/회피 척도로 활용</p>
 <ul>
 <li><strong>불안 하위 척도</strong>(18개 항목): 거절에 대한 두려움과 버려짐에 대한 강박관념을 측정; “나는 버려질까 봐 걱정된다.”</li>
 <li><strong>회피 하위 척도</strong>(18개 항목): 친밀감에 대한 두려움과 타인과 가까워지는 것에 대한 불편함 또는 의존성을 평가; “나는 파트너가 나에게 너무 가까이 다가오면 긴장한다.”</li>
+</ul>
+<p>Differentiation of Self Inventory(DSI; Skowron &amp; Friedlander, 1998)에서 두 하위 척도 사용</p>
+<ul>
 <li><strong>감정 반응성 하위 척도</strong>(11개 항목): 환경 자극에 감정이 넘치거나, 감정이 불안정하거나, 과민하게 반응하여 감정에 휩쓸릴 정도로 반응하는 정도를 반영; “때때로 나는 마치 감정의 롤러코스터를 타는 것처럼 느낀다.”</li>
 <li><strong>정서적 단절 하위 척도</strong>(12개 항목): 내면의 감정 경험이나 대인관계가 너무 강렬할 때 친밀감에 위협을 느끼고 타인과 자신의 감정으로부터 자신을 고립시키는 것을 반영; “나는 가족 중 누구에게도 정서적 지원을 요청하는 것을 고려하지 않는다.” (번역 by DeepL)</li>
 </ul>
+<p><img src="images/Wei-Vogel-2.png" class="img-fluid" width="600"></p>
 <p><img src="images/Wei-Vogel.png" class="img-fluid" width="600"></p>
 <p>SEM (구조방정식 모형): 변수들 간의 인과 관계에 대한 가설 모형</p>
 <p><img src="images/sem-alcohol.png" class="img-fluid" width="550"></p>
 <p>Martens, M. P. (2005). The use of structural equation modeling in counseling psychology research. The Counseling Psychologist, 33(3), 269–298.</p>
 <ul>
-<li>치료적 변화의 기제를 설명하는 타당한 증거를 제시하는 과정은 복잡하고 일련의 연구를 요함.</li>
+<li><strong>치료적 변화의 기제를 설명하는 타당한 증거를 제시하는 과정은 복잡하고 일련의 연구를 요함.</strong></li>
 <li>인과관계에 대해서는 실험 조작과 반복 검증을 통해 그 확신을 높일 수 있음.</li>
 <li>Kazdin(2009)의 7가지 제안 및 논의를 참고</li>
+</ul>
+</section>
+</section>
+<section id="사람-중심-연구-설계" class="level2">
+<h2 class="anchored" data-anchor-id="사람-중심-연구-설계">사람 중심 연구 설계</h2>
+<p>이질적인 집단을 대상으로 할 때, 그 <strong>이질성</strong>을 <strong>통계적 분석</strong>을 통해 파악하여, 몇 개의 군집으로 나누어 군집에 따른 효과의 차이를 고려하려는 노력</p>
+<ul>
+<li>예를 들어, 학업적 어려움은 다양한 문제(학습장애, 우울, 주의력 결핍, 문제행동 등)과 연관되어 있는데, 이를 고려하지 않는 개입은 효과가 떨어질 수 있음.<br>
+</li>
+<li>즉, 대상을 각 문제를 가진 군집으로 나누어 개입을 설계하는 것이 효과적일 수 있음.</li>
+<li>이러한 군집은 자료를 탐색적으로 분석하여 <strong>통계적 방법</strong>을 통해 얻을 수 있음.</li>
+</ul>
+<p>크게 3가지로 나누어 보면; 군집 분석, 잠재 범주/프로파일 분석, 성장 혼합 분석</p>
+<section id="군집-분석" class="level3">
+<h3 class="anchored" data-anchor-id="군집-분석">군집 분석</h3>
+<p>군집의 대상은 예를 들어,</p>
+<ul>
+<li>대상: 상담자 진술</li>
+<li>사람: 상담 센터 내담자</li>
+<li>변수: 검사 문항</li>
+</ul>
+<p><img src="images/cluster.png" class="img-fluid" width="550"><br>
+Source: <em>Introduction to Statistical Learning with Application in R</em> (2e) by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani</p>
+<ul>
+<li>몇 개의 군집으로 나눌지 통계적으로 분명하지 않는 것이 일반적</li>
+<li>연구자는 이론에 의해 지지 받을 수 있는 군집의 수를 선택하고,</li>
+<li>그 기저에 있는 동질성이나 구성개념을 파악하게 됨.</li>
+</ul>
+<p><strong>Rice &amp; Slaney (2002) 연구</strong></p>
+<p>참여자 학생들을 (1) 적응적 완벽주의자, (2) 부적응적 완벽주의자, (3) 비완벽주의자로 분류</p>
+<ul>
+<li>Almost Perfect Scale-Revised 척도(Slaney et al., 1996)를 이용
+<ul>
+<li>High Standards: 높은 기준 하위 척도(7개 항목)는 성과와 성취에 대한 높은 개인적 기준을 가지고 있는지를 측정합니다.</li>
+<li>Order: 질서 하위 척도(4개 항목)는 질서정연함과 깔끔함에 대한 선호도를 측정합니다.</li>
+<li>Discrepancy:불일치 하위 척도(12개 항목)는 응답자가 스스로 성과에 대한 개인적 기준을 충족하지 못한다고 인식하는 정도를 측정합니다. (번역 by DeepL)</li>
+</ul></li>
+<li>기존의 Hamackek (1978)의 완벽주의 유형에 대한 개념화에 대한 정량적 검증</li>
+</ul>
+<p><strong>Grzegorek, Slaney, Franze, &amp; Rice (2004) 연구</strong></p>
+<ul>
+<li>위의 군집에 대한 개념화를 토대로 이론에서 유도된 가설을 검증
+<ul>
+<li>부적응적 완벽주의자: 더 높은 자기비판과 우울</li>
+<li>적응적 완벽주의자: 더 높은 자기존중감</li>
+</ul></li>
+</ul>
+<p><strong>Whittrack &amp; Neville (2010)</strong> 연구</p>
+<ul>
+<li>317명의 흑인 대학생들을 대상</li>
+<li>크로스 인종 정체감 척도 (Cross Racial Identity Scale, CRIS)를 이용
+<ul>
+<li>접촉 전 동화 (Pre-encounter, PA): “나는 어느 한 인종 집단의 구성원이라기보다는 그냥 미국인이다.”</li>
+<li>접촉 전 잘못된 교육 (Pre-encounter Miseducation, PM): “흑인은 열심히 일하는 것보다 좋은 시간을 갖는 데 더 가치를 둔다.”</li>
+<li>접촉 전 자기혐오 (Pre-encounter Self-hatred, PSH): “솔직히 말하면, 나는 내가 흑인이라는 것이 싫다.”</li>
+<li>백인 혐오 몰두-출현 (Immersion-Emersion, IEAW): “나는 백인들 모두에게 증오와 경멸감을 갖고 있다.”</li>
+<li>내면화된 흑인 중심성 (Internalization Afrocentric, IA): “나는 흑인 중심의 관점에서 세상을 보고 생각한다.”</li>
+<li>내면화된 다문화적 포용성 (Internalization Multiculturalists Inclusive, IMCI): “다문화주의자로서 나는 히스패닉, 아시아계 미국인, 백인, 유태인, 게이, 레즈비언 등 많은 집단과 연결되어 있다.”</li>
+</ul></li>
+<li>군집분석 결과 5개의 군집으로 분류:
+<ul>
+<li>낮은 인종 부각(Low Race Salience): 인종을 긍정적이거나 부정적인 것으로 초점을 맞추거나 중요시하지 않음.</li>
+<li>다문화주의자(Multiculturalist): 주로 다문화주의적 태도를 지지하며, 이는 인종 정체성에 다문화적 초점을 통합하는 데 관심이 있음을 반영.</li>
+<li>자기 증오(Self-hatred)</li>
+<li>몰두(Immersion)</li>
+<li>흑인 중심(Afrocentric): 이전 클러스터의 자기 증오와 잘못된 교육 측면이 결여된, 강한 긍정적 흑인 정체성을 지님.</li>
+</ul></li>
+</ul>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/Whittaker-cluster-1.png" class="img-fluid" width="380"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/Whittaker-cluster-2.png" class="img-fluid" width="380"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/Whittaker-cluster-3.png" class="img-fluid" width="380"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/Whittaker-cluster-4.png" class="img-fluid" width="380"></p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/Whittaker-cluster-5.png" class="img-fluid" width="380"></p>
+</div>
+</div>
+</div>
+<ul>
+<li>군집들 간 심리적 속성을 비교: (1) 정신건강 질문지, (2) 삶의 만족도 척도,(3) 개인적 관점 설문지
+<ul>
+<li>다문화 집단(Multiculturalist): 세 척도 모두에서 보다 높은 수준의 심리적 안녕감 보고</li>
+<li>몰두 집단(Immersion): 더 낮은 수준의 심리적 안녕감 보고</li>
+</ul></li>
+</ul>
+</section>
+<section id="잠재-범주프로파일-분석" class="level3">
+<h3 class="anchored" data-anchor-id="잠재-범주프로파일-분석">잠재 범주/프로파일 분석</h3>
+<p>구조방정식(SEM) 모형을 이용하여, 좀 더 진전된 군집분석 방식</p>
+<p>각 개인을 각 범주에 단순히 할당하기보다는 각 “잠재 범주”(latent class)에 속할 확률을 계산</p>
+<ul>
+<li>예를 들어, A는 “적응적 완벽주의”에 속할 확률이 93%, “부적응적 완벽주의”에 속할 확률이 6%, “비완벽주의”에 속할 확률이 1%임.</li>
+</ul>
+<p>예) Brauner, C., Wöhrmann, A. M., Frank, K., &amp; Michel, A. (2019). Health and work-life balance across types of work schedules: A latent class analysis. Applied Ergonomics, 81, 102906.</p>
+<p><img src="images/lca-1.png" class="img-fluid" width="550"></p>
+<p><img src="images/lca-2.png" class="img-fluid" width="700"></p>
+<p><img src="images/lca-3.png" class="img-fluid" width="400"></p>
+</section>
+<section id="성장-혼합-모델링" class="level3">
+<h3 class="anchored" data-anchor-id="성장-혼합-모델링">성장 혼합 모델링</h3>
+<p>개인의 변화를 측정하여(종단 연구) 통해 “두드러진 변화 양상”을 보이는 개인들로 군집화</p>
+<p><strong>Wang 등(2012)의 연구</strong></p>
+<ul>
+<li>중국인 유학생을 대상으로, 학기 전 + 이후 3 학기 동안 심리적 스트레스의 궤적을 조사</li>
+<li>서로 다른 패턴으로 적응할 것이라는 가정</li>
+<li>4개의 패턴으로 군집화
+<ul>
+<li>4 시점에서 모두 높은 수준으로 유지 (유지, 10%)</li>
+<li>도착 전부터 1 학기까지 감소 (완화, 14%)</li>
+<li>증가하다 2학기에 정점을 이룸 (문화 충격, 11%)</li>
+<li>일관성있게 낮게 유지 (적응, 65%)</li>
+</ul></li>
+</ul>
+<p><img src="images/Wang.png" class="img-fluid" width="650"></p>
+<p>  <img src="images/Wang-2.png" class="img-fluid" width="600"></p>
+<ul>
+<li>적응 궤적의 패턴과 관련있는 변수들 (시작시)
+<ul>
+<li>더 높은 수준의 자아존중감</li>
+<li>문제해결 능력에 대한 긍정적 평가</li>
+<li>미국에서 공부하기 전 더 낮은 부적응적 완벽주의</li>
+</ul></li>
+<li>미국 문화로의 유연한 전환과 관련된 요소 (과정 중)
+<ul>
+<li>미국 유학 첫 학기 동안 균형 잡힌 사회적 지지 (가족, 고국의 친구들, 다른 유학생들)</li>
+<li>스트레스 대처 전략: acceptance, reframing, striving</li>
+</ul></li>
 </ul>
 
 
@@ -810,27 +954,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          if (link.getAttribute("rel") === null) {
-            link.setAttribute("rel", "noopener");
-          }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -840,17 +967,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -863,128 +981,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
-        }
-        typesetMath(container);
-        return container.innerHTML
-      } else {
-        typesetMath(note);
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      typesetMath(note);
-      return note.innerHTML;
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1028,7 +1024,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1054,32 +1049,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1137,23 +1106,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../contents/quasi-experiments.html" class="pagination-link  aria-label=" 12장="" 준실험과="" 종단="" 설계"="">
+      <a href="../contents/quasi-experiments.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">12장 준실험과 종단 설계</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../contents/analogue.html" class="pagination-link">
+        <span class="nav-page-text">14장 모의 연구</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>This work © 2023 by Sungkyun Cho is licensed under CC BY-NC-SA 4.0</p>
-</div>   
+    <div class="nav-footer-left">This work © 2023 by Sungkyun Cho is licensed under CC BY-NC-SA 4.0</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
@@ -1162,7 +1146,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-
 
 
 

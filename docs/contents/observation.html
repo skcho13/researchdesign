@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -728,6 +731,115 @@ Source: <em>Applied Multiple Regression/Correlation Analysis for the Behavioral 
 <li><strong>치료적 변화의 기제를 설명하는 타당한 증거를 제시하는 과정은 복잡하고 일련의 연구를 요함.</strong></li>
 <li>인과관계에 대해서는 실험 조작과 반복 검증을 통해 그 확신을 높일 수 있음.</li>
 <li>Kazdin(2009)의 7가지 제안 및 논의를 참고</li>
+</ul>
+<p><i class="bi-cup-hot " style="" role="img" aria-hidden="true"></i> <strong>SEM에서 모형의 적합도 지수</strong></p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div class="columns quarto-layout-cell" style="flex-basis: 42.9%;justify-content: center;">
+<p><img src="images/fit-index2.png" class="img-fluid" width="320"></p>
+</div>
+<div class="columns quarto-layout-cell" style="flex-basis: 57.1%;justify-content: center;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="observation_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><img src="images/fit-index.png" class="img-fluid" width="650"></p>
+<p><em>회귀계수의 비교</em> (Salary 단위: 1000)</p>
+<div class="cell quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<pre><code>       salary  pubs  time
+salary      0 0.122 0.983
+pubs        0 0.000 1.983
+time        0 0.000 0.000</code></pre>
+</div>
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 66.7%;justify-content: center;">
+<pre><code>       salary  pubs  time
+salary      0 0.336 0.000
+pubs        0 0.000 1.983
+time        0 0.000 0.000</code></pre>
+</div>
+</div>
+</div>
+<p><em>상관계수의 비교</em></p>
+<div class="cell quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<pre><code>       salary  pubs  time
+salary  1.000            
+pubs    0.588 1.000      
+time    0.710 0.657 1.000</code></pre>
+</div>
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 66.7%;justify-content: center;">
+<pre><code>       salary  pubs  time
+salary  1.000            
+pubs    0.588 1.000      
+time    0.386 0.657 1.000</code></pre>
+</div>
+</div>
+</div>
+<p><em>상관계수의 차이</em><br>
+actual correlation/covariance (saturated model) vs.&nbsp;<strong>model implied/predicted</strong> correlation/covariance matrix</p>
+<ul>
+<li>raw vs.&nbsp;standardized</li>
+</ul>
+<div class="cell quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<pre><code>       salary  pubs  time
+salary  0.000            
+pubs    0.000 0.000      
+time    0.324 0.000 0.000</code></pre>
+</div>
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 66.7%;justify-content: center;">
+<pre><code>       salary  pubs  time
+salary  0.000            
+pubs    0.000 0.000      
+time    1.963 0.000 0.000</code></pre>
+</div>
+</div>
+</div>
+<p>위의 covariance matrix를 이용하여 다양한 지표들로 <strong>모형의 적합도</strong>(fit indices)를 추정</p>
+<ul>
+<li>산술적 차이나 비율등의 차이로 비교 (residual covariance matrix, 잔차 행렬)
+<ul>
+<li>SRMR : 잔차 covariace 값들의 평균 정도를 수량화</li>
+</ul></li>
+<li>inferential vs.&nbsp;descriptive indices
+<ul>
+<li><span class="math inline">\(\chi^2\)</span> : saturated 모형과 설정한 모형이 같다는 가설을 통계적으로 검정</li>
+<li>GFI, NFI 등</li>
+</ul></li>
+<li>alternatives: RMSEA, CFI 등</li>
+</ul>
+<p><i class="fa-solid fa-plug-circle-bolt" aria-label="plug-circle-bolt"></i> <strong>매개효과/조절효과의 존재 검증?</strong></p>
+<p><img src="images/mediation-confounding.png" class="img-fluid" width="600"></p>
+<ol type="1">
+<li>X → Y의 인과 관계를 실험적으로 검증</li>
+<li>M → Y의 인과 관계를 실험적으로 검증</li>
+</ol>
+<p>이 때, X → Y의 인과 관계가 유추되는가?</p>
+<p>만약, N을 거쳐가는 효과가 존재한다면?</p>
+<ul>
+<li>X → Y의 효과는 0이거나 마이너스가 될 수 있음.</li>
+<li>실제 X → Y의 효과가 없는 경우에도 매개효과를 찾으려는 노력을 하기를 제안하고 있음.</li>
+</ul>
+<ol start="3" type="1">
+<li>이제 X → Y의 인과 관계를 실험적으로 검증하는 되는가?</li>
+</ol>
+<p>M이 Y보다 이전에 발생한 것이라는 근거는? Y → M을 발생시킬 수 없는가?</p>
+<p>참고, 직접 효과(direct effect) vs.&nbsp;간접 효과(indirect effect)의 표현에서 직접효과라는 표현보다는 omiited mediator라는 표현을 사용하는 것이 더 적절함.</p>
+<p>일반적인 관찰연구의 접근에서처럼 confounding을 제거하려고 매우 노력해야 함!</p>
+<p><img src="images/moderation-confounding.png" class="img-fluid" width="550"></p>
+<ul>
+<li>M의 특성/수준이 X → Y의 효과를 변화시킨 것인가?</li>
+<li>기본적으로, M의 특성/수준에 따라 X → Y의 효과가 “다르게 나타난다”라고 표현하는 것이 적절함.</li>
+<li>M으로 “인해” 관계가 바뀌었다고 이해할 수 없음.</li>
+<li>Common cause가 존재할 수 있음.</li>
 </ul>
 </section>
 </section>

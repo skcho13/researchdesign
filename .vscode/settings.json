@@ -1,5 +1,6 @@
 {
     "editor.fontFamily": "'Gowun Batang', Menlo, Monaco, 'Courier New', monospace",
     "chat.editor.lineHeight": 0,
-    "editor.lineHeight": 2
+    "editor.lineHeight": 2,
+    "editor.inlineSuggest.showToolbar": "onHover"
 }

@@ -1,14 +1,14 @@
 ---
 title: Welcome
-subtitle: 차의과학대학교 연구방법론 2023 2학기
-date: Aug 27, 2023
+subtitle: 차의과학대학교 연구방법론 2024 2학기
+date: last-modified
 author: Sungkyun Cho
 ---
 ## 강의 정보
 
 강사: 조성균, sk.cho@snu.ac.kr  
-수업시간: 토 9:00 ~ 11:50  
-Website: [chard.modellings.art](https://chard.modellings.art)
+수업시간: 토 4:00 ~ 6:50  
+Website: [chards.modellings.art](https://chards.modellings.art)
 
 과제: Notice  
 질문: Communicate/Ask
@@ -22,5 +22,26 @@ Website: [chard.modellings.art](https://chard.modellings.art)
 
 *상담연구방법론(4판)*, 센게이지러닝코리아(주), 2017 by Heppner, P. P., Wampold, B. E., Owen, J., Thopso, M. N.
 
+
+## 강의 계획
+
+1주: 전체적인 연구방법론에 대한 이해 1  
+2주: 전체적인 연구방법론에 대한 이해 2  
+3주: 연구주제 및 설계에 대해 이해  
+4주: 여러 측면의 타당도를 이해  
+5주: 모집단의 문제/ 척도 개발의 필요성  
+6주: 진실험 연구설계의 특징을 이해  
+7주: 준실험 및 종단 연구설계의 특징을 이해  
+8주: 중간고사  
+9주: 서베이 연구방법과 한계를 이해  1
+10주: 서베이 연구방법과 한계를 이해  2  
+11주: 모의 연구에 대한 이해  
+12주: 단일 피험자 연구에 대한 이해  
+13주: 상담의 성과에 대한 연구의 특성을 이해  
+14주: 상담의 과정에 대한 연구의 특성을 이해  
+15주: 상담 프로그램 평가
+16주: 기말고사
+
 ## 수업 활동
-출석 (10%), 퀴즈 (20%), 과제 (10%), 중간고사 대체 과제 (30%), 기말고사 대체 과제 (30%)
+출석 (20%), 중간고사 (40%), 기말고사 (40%)
+

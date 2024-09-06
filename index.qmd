@@ -8,7 +8,7 @@ author: Sungkyun Cho
 
 강사: 조성균, sk.cho@snu.ac.kr  
 수업시간: 토 4:00 ~ 6:50  
-Website: [chards.modellings.art](https://chards.modellings.art)
+Website: [chard2.modellings.art](https://chard2.modellings.art)
 
 과제: Notice  
 질문: Communicate/Ask

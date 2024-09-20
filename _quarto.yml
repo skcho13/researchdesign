@@ -30,7 +30,7 @@ website:
     align: center
     style: "docked"
     search: false
-    collapse-level: 3
+    collapse-level: 4
     
     contents:
       - href: index.qmd
@@ -39,21 +39,21 @@ website:
       - section: Notes
         contents:
           - href: contents/overview.ipynb
-          # - section: Part 2
-          #   contents:
-          #     - section: 5장 관심사와 연구주제
-          #       contents:
-          #         - href: contents/research-topics.qmd
-          #           text: 연구 주제
-          #         - href: contents/research-topics2.qmd
-          #           text: 가설 개발
-          #     - section: 6장 연구설계의 선택
-          #       contents:
-          #         - href: contents/select-design.qmd
-          #           text: 연구 설계의 기본
-          #         - href: contents/select-design2.qmd
-          #           text: 연구 설계의 분류
-          #     - section: contents/validity.qmd
+          - section: Part 2
+            contents:
+              - section: 5장 관심사와 연구주제
+                contents:
+                  - href: contents/research-topics.qmd
+                    text: 연구 주제
+                  - href: contents/research-topics2.qmd
+                    text: 가설 개발
+              - section: 6장 연구설계의 선택
+                contents:
+                  - href: contents/select-design.qmd
+                    text: 연구 설계의 기본
+                  - href: contents/select-design2.qmd
+                    text: 연구 설계의 분류
+              # - section: contents/validity.qmd
           #       contents: 
           #         - href: contents/validity1.qmd
           #           text: 통계적 결론 타당도

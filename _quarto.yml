@@ -63,10 +63,10 @@ website:
                     text: 구성 타당도
                   - href: contents/validity4.qmd
                     text: 외적 타당도
-          #     - href: contents/population.qmd
-          #       text: 8장 모집단 문제
-          #     - href: contents/scale.qmd
-          #       text: 10장 척도개발
+              - href: contents/population.qmd
+                text: 8장 모집단 문제
+              - href: contents/scale.qmd
+                text: 10장 척도개발
           # - section: Part 3
           #   contents:
           #     - href: contents/true-experiments.qmd

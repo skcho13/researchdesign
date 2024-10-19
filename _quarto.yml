@@ -67,10 +67,10 @@ website:
                 text: 8장 모집단 문제
               - href: contents/scale.qmd
                 text: 10장 척도개발
-          # - section: Part 3
-          #   contents:
-          #     - href: contents/true-experiments.qmd
-          #       text: 11장 진실험 설계
+          - section: Part 3
+            contents:
+              - href: contents/true-experiments.qmd
+                text: 11장 진실험 설계
           #     - href: contents/quasi-experiments.qmd
           #       text: 12장 준실험과 종단 설계
           #     - href: contents/observation.qmd

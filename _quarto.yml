@@ -5,6 +5,7 @@ project:
     - "*.qmd"
     - "*.ipynb"
     - "!resources*.ipynb"
+    - "!contents/ignore/"
   resources: CNAME
 
 website:
@@ -71,8 +72,8 @@ website:
             contents:
               - href: contents/true-experiments.qmd
                 text: 11장 진실험 설계
-          #     - href: contents/quasi-experiments.qmd
-          #       text: 12장 준실험과 종단 설계
+              - href: contents/quasi-experiments.qmd
+                text: 12장 준실험과 종단 설계
           #     - href: contents/observation.qmd
           #       text: 13장 양적 기술 설계
           #     - href: contents/analogue.qmd

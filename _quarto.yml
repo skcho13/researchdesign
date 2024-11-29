@@ -84,8 +84,8 @@ website:
             contents:
               - href: contents/outcomes.qmd
                 text: 20장 상담 성과 연구
-          #     - href: contents/processes.qmd
-          #       text: 21장 상담 과정 연구
+              - href: contents/processes.qmd
+                text: 21장 상담 과정 연구
           #     # - href: contents/programs.qmd
           #     - text: 22장 상담 프로그램 평가
       - text: ---

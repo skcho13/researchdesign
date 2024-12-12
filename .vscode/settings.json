@@ -1,6 +1,7 @@
 {
-    "editor.fontFamily": "Menlo, 'Gowun Batang', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Apple SD Gothic Neo', Menlo, 'Gowun Batang', Menlo, Monaco, 'Courier New', monospace",
     "chat.editor.lineHeight": 0,
     "editor.lineHeight": 2,
-    "editor.inlineSuggest.showToolbar": "onHover"
+    "editor.inlineSuggest.showToolbar": "onHover",
+    "quarto.visualEditor.fontSize": 0
 }

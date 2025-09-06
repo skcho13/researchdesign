@@ -35,7 +35,6 @@ website:
     
     contents:
       - href: index.qmd
-      - href: contents/notice.qmd
       - text: ---
       - section: Notes
         contents:

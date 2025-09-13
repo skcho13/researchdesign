@@ -780,9 +780,12 @@ Yes and No!</p>
 </div>
 </div>
 <p><strong>Collider bias</strong></p>
-<p>운동능력이 뛰어나면 지능이 떨어지는가?</p>
-<p><img src="images/colider.png" class="img-fluid" width="450"><br>
-Source: <em>Statistical Modeling</em> by Daniel T. Kaplan</p>
+<p>미모가 뛰어나면 연기력이 떨어지는가?</p>
+<p><img src="images/collider3.png" class="img-fluid" width="300"></p>
+<p>코딩 기술이 뛰어나면 협업능력이 떨어지는가?<br>
+어느 회사에서 지원자의 코딩 능력과 협업 능력을 1점부터 5점까지 정량화하여,<br>
+총점 8점 이상을 받은 지원자를 모두 채용한다고 했을 때,</p>
+<p><img src="images/collider2.png" class="img-fluid" width="300"></p>
 <hr>
 <p>앞서 살펴본 관찰 연구들이 모두 confounding의 위험을 안고 있기에 결정적인 인과관계를 파악하기 위해, 전통적으로 “통계학”의 시각에서 인과문제에 대해서는 보통 임상테스트에서 실시하는 RCT (randomized controlled trial)라고 부르는 소위 gold standard한 <strong>실험 연구</strong>를 통해서 해결하고자 했음<br>
 개념적으로는 <strong>물리적 통제</strong>라고 볼 수 있으며, 두 그룹으로 집단을 <strong>randomly assign</strong>(무선/무작위 배정/할당)하면 모든 면에서 동질한 성향을 가짐. 예를 들어, 두 집단의 연령이 평균적으로 동일해짐.<br>
@@ -981,17 +984,39 @@ Note
 </section>
 <section id="selection-bias" class="level2">
 <h2 class="anchored" data-anchor-id="selection-bias">Selection Bias</h2>
-<p>수집된 데이터의 성격에 따라 인과추론을 방해하거나 일반화할 수 있는 대상의 범위가 제한됨</p>
+<p>수집된 데이터의 특성에 따라 인과추론을 방해하거나(confounding); internal validity(내적 타당도)<br>
+일반화할 수 있는 대상의 범위가 제한됨; external validity(외적 타당도)</p>
 <ul>
 <li>노인에 관한 데이터: 누가 사망했는가?
 <ul>
-<li>관찰 할 수 없는 대상</li>
-<li>과거 기록을 이용?</li>
+<li>Survival bias: 일종의 collider bias</li>
+<li>예를 들어, 비만이 사망율에 미치는 효과에 대한 과소추정<br>
+<img src="images/collider-life-expectancy.png" class="img-fluid" width="320"></li>
 </ul></li>
-<li>설문 데이터: 누가 참여했는가?</li>
-<li>회사 내에서의 만족도 조사: 근속년수에 따른 샘플 속성의 변화</li>
-<li>코호트/특정세대의 특성: 그들의 특성인가?</li>
+<li>의료 분야에서 발견되는 패러독스
+<ul>
+<li>비만은 당뇨 환자에게 이익이 되는가?</li>
+</ul></li>
+<li>과거 기록을 이용?; 수녀들의 자서전 연구
+<ul>
+<li>추적조사/종단연구(longitudinal study)</li>
+</ul></li>
+<li>회사 구성원에 대한 조사: 근속년수에 따른 샘플 속성의 변화</li>
+<li>누가 참여(안)했는가? 어떤 방식으로 참여했는가?
+<ul>
+<li>관측되지 않은 데이터: 어떤 사람/대상이 왜 누락되었는가?</li>
+<li>어떤 사람들이 설문/실험에 참여했는가? 혹은 어떤 문항에 응답했는가?/하지 않았는가?</li>
+</ul></li>
+<li>어떤 유저들의 데이터인가? 가령, SNS의 기록은 누가 남기는가?</li>
+<li>코호트/특정세대의 특성: 그들만의 특성인가?</li>
 </ul>
+<div style="line-height: 1.5em; font-size: .9em">
+<blockquote class="blockquote">
+<p><em>Abraham Wald: “Where are the missing holes?”</em></p>
+<p><img src="images/missing-holes.png" class="img-fluid" width="400"></p>
+<p><a href="https://www.warhistoryonline.com/war-articles/abraham-wald.html">Source: War History Online</a></p>
+</blockquote>
+</div>
 </section>
 <section id="uncertainty" class="level2">
 <h2 class="anchored" data-anchor-id="uncertainty">Uncertainty</h2>

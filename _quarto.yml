@@ -53,38 +53,38 @@ website:
                     text: 연구 설계의 기본
                   - href: contents/select-design2.qmd
                     text: 연구 설계의 분류
-              - section: contents/validity.qmd
-                contents: 
-                  - href: contents/validity1.qmd
-                    text: 통계적 결론 타당도
-                  - href: contents/validity2.qmd
-                    text: 내적 타당도
-                  - href: contents/validity3.qmd
-                    text: 구성 타당도
-                  - href: contents/validity4.qmd
-                    text: 외적 타당도
-              - href: contents/population.qmd
-                text: 8장 모집단 문제
-              - href: contents/scale.qmd
-                text: 10장 척도개발
-          - section: Part 3
-            contents:
-              - href: contents/true-experiments.qmd
-                text: 11장 진실험 설계
-              - href: contents/quasi-experiments.qmd
-                text: 12장 준실험과 종단 설계
-              - href: contents/observation.qmd
-                text: 13장 양적 기술 설계
-              - href: contents/analogue.qmd
-                text: 14장 모의 연구
-              - href: contents/single-subject.qmd
-                text: 15장 단일 피험자 설계
-          - section: Part 4
-            contents:
-              - href: contents/outcomes.qmd
-                text: 20장 상담 성과 연구
-              - href: contents/processes.qmd
-                text: 21장 상담 과정 연구
+          #     - section: contents/validity.qmd
+          #       contents: 
+          #         - href: contents/validity1.qmd
+          #           text: 통계적 결론 타당도
+          #         - href: contents/validity2.qmd
+          #           text: 내적 타당도
+          #         - href: contents/validity3.qmd
+          #           text: 구성 타당도
+          #         - href: contents/validity4.qmd
+          #           text: 외적 타당도
+          #     - href: contents/population.qmd
+          #       text: 8장 모집단 문제
+          #     - href: contents/scale.qmd
+          #       text: 10장 척도개발
+          # - section: Part 3
+          #   contents:
+          #     - href: contents/true-experiments.qmd
+          #       text: 11장 진실험 설계
+          #     - href: contents/quasi-experiments.qmd
+          #       text: 12장 준실험과 종단 설계
+          #     - href: contents/observation.qmd
+          #       text: 13장 양적 기술 설계
+          #     - href: contents/analogue.qmd
+          #       text: 14장 모의 연구
+          #     - href: contents/single-subject.qmd
+          #       text: 15장 단일 피험자 설계
+          # - section: Part 4
+          #   contents:
+          #     - href: contents/outcomes.qmd
+          #       text: 20장 상담 성과 연구
+          #     - href: contents/processes.qmd
+          #       text: 21장 상담 과정 연구
           #     # - href: contents/programs.qmd
           #     - text: 22장 상담 프로그램 평가
       - text: ---

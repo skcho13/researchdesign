@@ -53,16 +53,16 @@ website:
                     text: 연구 설계의 기본
                   - href: contents/select-design2.qmd
                     text: 연구 설계의 분류
-          #     - section: contents/validity.qmd
-          #       contents: 
-          #         - href: contents/validity1.qmd
-          #           text: 통계적 결론 타당도
-          #         - href: contents/validity2.qmd
-          #           text: 내적 타당도
-          #         - href: contents/validity3.qmd
-          #           text: 구성 타당도
-          #         - href: contents/validity4.qmd
-          #           text: 외적 타당도
+              - section: contents/validity.qmd
+                contents: 
+                  - href: contents/validity1.qmd
+                    text: 통계적 결론 타당도
+                  - href: contents/validity2.qmd
+                    text: 내적 타당도
+                  - href: contents/validity3.qmd
+                    text: 구성 타당도
+                  - href: contents/validity4.qmd
+                    text: 외적 타당도
           #     - href: contents/population.qmd
           #       text: 8장 모집단 문제
           #     - href: contents/scale.qmd

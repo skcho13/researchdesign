@@ -4,7 +4,7 @@ subtitle: 차의과학대학교 연구방법론 2025 2학기
 date: last-modified
 author: Sungkyun Cho
 ---
-
+<!-- 
 ::: {.columns}
 ::: {.column width="50%"}
 ![](contents/images/scores-2.png)
@@ -12,7 +12,7 @@ author: Sungkyun Cho
 ::: {.column width="50%"}
 ![](contents/images/scores-1.png)
 :::
-:::
+::: -->
 
 ## 강의 정보
 

@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": " 'Courier New', 'Apple SD Gothic Neo', Menlo, 'Gowun Batang', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Source Code Pro', 'Hasklug Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
     "chat.editor.lineHeight": 0,
     "editor.lineHeight": 2,
     "editor.inlineSuggest.showToolbar": "onHover",

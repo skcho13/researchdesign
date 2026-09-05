@@ -804,7 +804,7 @@
     "href": "index.html",
     "title": "Welcome",
     "section": "",
-    "text": "강사: 조성균, sk.cho@snu.ac.kr\n수업시간: 토 4:00 ~ 6:50\nWebsite: chard2.modellings.art\n질문: Communicate/Ask",
+    "text": "강사: 조성균, sk.cho@snu.ac.kr\n수업시간: 토 4:00 ~ 6:50\nWebsite: chard2.modellings.art\n질문: Ask",
     "crumbs": [
       "Welcome"
     ]
@@ -814,7 +814,7 @@
     "href": "index.html#강의-정보",
     "title": "Welcome",
     "section": "",
-    "text": "강사: 조성균, sk.cho@snu.ac.kr\n수업시간: 토 4:00 ~ 6:50\nWebsite: chard2.modellings.art\n질문: Communicate/Ask",
+    "text": "강사: 조성균, sk.cho@snu.ac.kr\n수업시간: 토 4:00 ~ 6:50\nWebsite: chard2.modellings.art\n질문: Ask",
     "crumbs": [
       "Welcome"
     ]
@@ -824,7 +824,7 @@
     "href": "index.html#강의-개요",
     "title": "Welcome",
     "section": "강의 개요",
-    "text": "강의 개요\n상담심리학 분야에서 수행되는 연구의 특성을 학습하고, 연구자로서의 기본 능력을 다집니다.\n일반적인 연구방법들을 이해하고 이를 바탕으로, 상담심리학 분야의 연구들을 이해하고 수행할 수 있도록 합니다.\n\n교재\n상담연구방법론(4판), 센게이지러닝코리아(주), 2017 by Heppner, P. P., Wampold, B. E., Owen, J., Thopso, M. N.",
+    "text": "강의 개요\n상담심리학 분야에서 수행되는 연구의 특성을 학습하고, 연구자로서의 기본 능력을 다집니다.\n일반적인 연구방법들을 이해하고 이를 바탕으로, 상담심리학 분야의 연구들을 이해하고 수행할 수 있도록 합니다.\n\n교재\n상담연구방법론(4판), 센게이지러닝코리아(주), 2017 by Heppner, P. P., Wampold, B. E., Owen, J., Thopso, M. N.\nLLMs: ChatGPT, Claude, Gemini, Grok, DeepSeek\n\nGithub Copilot: VS Code에서 제공하는 AI 협업 도구, 점차 통합되어 가고 있음\n\nStudents - GitHub Education: join\n학생 인증을 마치면 GitHub Copilot Student 플랜이 무료로 제공됨.\n인증된 후에는 Github Setting에 가서 Copilot을 쓰겠다고 활성해야함!\n인증이 안 되었거나 대기 중이면 우선 Copilot Free(월 채팅 요청 제한)로도 실습 가능\n\n\n\n\n\n\n\n\nLLM 사용자 지정 지침(instructions) 예\n\n\n\nAlways focus on the key points in my questions to determine my intent. Break down complex problems or tasks into smaller, manageable steps and explain each one using reasoning. Provide multiple perspectives or solutions.\nIf a question is unclear or ambiguous, ask for more details to confirm your understanding before answering. Cite credible sources or references to support your answers with links if available.\nIf a mistake is made in a previous response, recognize and correct it.\nAfter a response, provide three follow-up questions worded as if I’m asking you. Format in bold as Q1, Q2, and Q3. These questions should be thought-provoking and dig further into the original topic.\nTake a deep breath, and work on this step by step.\n한글로 답변할 때는 공손하게 …입니다로 표현해줘.\n… 초보자인 대학생에게 설명하듯이 답해해줘.",
     "crumbs": [
       "Welcome"
     ]
@@ -834,7 +834,7 @@
     "href": "index.html#강의-계획",
     "title": "Welcome",
     "section": "강의 계획",
-    "text": "강의 계획\n1주: 전체적인 연구방법론에 대한 이해 1\n2주: 전체적인 연구방법론에 대한 이해 2\n3주: 연구주제 및 설계에 대해 이해\n4주: 여러 측면의 타당도를 이해\n5주: 모집단의 문제/ 척도 개발의 필요성\n6주: 진실험 연구설계의 특징을 이해\n7주: 준실험 및 종단 연구설계의 특징을 이해\n8주: 중간고사\n9주: 서베이 연구방법과 한계를 이해 1\n10주: 서베이 연구방법과 한계를 이해 2\n11주: 모의 연구에 대한 이해\n12주: 단일 피험자 연구에 대한 이해\n13주: 상담의 성과에 대한 연구의 특성을 이해\n14주: 상담의 과정에 대한 연구의 특성을 이해\n15주: 상담 프로그램 평가\n16주: 기말고사",
+    "text": "강의 계획\n1주: 전체적인 연구방법론에 대한 이해 1\n2주: 전체적인 연구방법론에 대한 이해 2\n3주: 연구주제 및 설계\n4주: 여러 측면의 타당도\n5주: 모집단의 문제/ 척도 개발의 필요성\n6주: 진실험 연구설계의 특징\n7주: 준실험 및 종단 연구설계의 특징\n8주: 중간고사\n9주: 서베이 연구방법과 한계 1\n10주: 서베이 연구방법과 한계 2\n11주: 모의 연구\n12주: 단일 피험자 연구\n13주: 상담의 성과에 대한 연구의 특성\n14주: 상담의 과정에 대한 연구의 특성\n15주: 상담 프로그램 평가\n16주: 기말고사",
     "crumbs": [
       "Welcome"
     ]

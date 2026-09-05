@@ -88,10 +88,8 @@ website:
           #     # - href: contents/programs.qmd
           #     - text: 22장 상담 프로그램 평가
       - text: ---
-      - section: Communicate
-        contents:
-          - href: https://docs.google.com/document/d/1ptwfOtcraTomjh_upF1HmPxfNPVnRShiAlzieFr0HHA/edit?usp=sharing
-            text: Ask
+      - href: https://docs.google.com/document/d/1ptwfOtcraTomjh_upF1HmPxfNPVnRShiAlzieFr0HHA/edit?usp=sharing
+        text: Ask
 
 format:
   html:

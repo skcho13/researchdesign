@@ -1,6 +1,6 @@
 ---
 title: Welcome
-subtitle: 차의과학대학교 연구방법론 2025 2학기
+subtitle: 차의과학대학교 연구방법론 2026 2학기
 date: last-modified
 author: Sungkyun Cho
 ---
@@ -20,7 +20,7 @@ author: Sungkyun Cho
 수업시간: 토 4:00 ~ 6:50  
 Website: [chard2.modellings.art](https://chard2.modellings.art)
 
-질문: Communicate/Ask
+질문: Ask
 
 ## 강의 개요
 
@@ -31,23 +31,51 @@ Website: [chard2.modellings.art](https://chard2.modellings.art)
 
 *상담연구방법론(4판)*, 센게이지러닝코리아(주), 2017 by Heppner, P. P., Wampold, B. E., Owen, J., Thopso, M. N.
 
+LLMs: [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Grok](https://grok.com), [DeepSeek](https://www.deepseek.com/en)
+
+- Github Copilot: VS Code에서 제공하는 AI 협업 도구, 점차 통합되어 가고 있음
+  - Students - GitHub Education: [join](https://github.com/education/students)
+  - 학생 인증을 마치면 **GitHub Copilot Student** 플랜이 무료로 제공됨.
+  - 인증된 후에는 Github Setting에 가서 Copilot을 쓰겠다고 **활성해야함**!
+  - 인증이 안 되었거나 대기 중이면 우선 **Copilot Free**(월 채팅 요청 제한)로도 실습 가능
+
+::: {.callout-important title="LLM 사용자 지정 지침(instructions) 예"}
+Always focus on the key points in my questions to determine my intent. 
+Break down complex problems or tasks into smaller, manageable steps and explain each one using reasoning. 
+Provide multiple perspectives or solutions. 
+
+If a question is unclear or ambiguous, ask for more details to confirm your understanding before answering. 
+Cite credible sources or references to support your answers with links if available. 
+
+If a mistake is made in a previous response, recognize and correct it. 
+
+**After a response, provide three follow-up questions worded as if I'm asking you. Format in bold as Q1, Q2, and Q3. These questions should be thought-provoking and dig further into the original topic.**
+
+Take a deep breath, and work on this step by step.
+
+한글로 답변할 때는 공손하게 ...입니다로 표현해줘.
+
+... 초보자인 대학생에게 설명하듯이 답해해줘.
+
+![](contents/images/chatgpt-instruction.png){width=500 .lightbox}
+:::
 
 ## 강의 계획
 
 1주: 전체적인 연구방법론에 대한 이해 1  
 2주: 전체적인 연구방법론에 대한 이해 2  
-3주: 연구주제 및 설계에 대해 이해  
-4주: 여러 측면의 타당도를 이해  
+3주: 연구주제 및 설계  
+4주: 여러 측면의 타당도  
 5주: 모집단의 문제/ 척도 개발의 필요성  
-6주: 진실험 연구설계의 특징을 이해  
-7주: 준실험 및 종단 연구설계의 특징을 이해  
+6주: 진실험 연구설계의 특징  
+7주: 준실험 및 종단 연구설계의 특징  
 8주: 중간고사  
-9주: 서베이 연구방법과 한계를 이해  1  
-10주: 서베이 연구방법과 한계를 이해  2  
-11주: 모의 연구에 대한 이해  
-12주: 단일 피험자 연구에 대한 이해  
-13주: 상담의 성과에 대한 연구의 특성을 이해  
-14주: 상담의 과정에 대한 연구의 특성을 이해  
+9주: 서베이 연구방법과 한계 1  
+10주: 서베이 연구방법과 한계 2  
+11주: 모의 연구  
+12주: 단일 피험자 연구  
+13주: 상담의 성과에 대한 연구의 특성  
+14주: 상담의 과정에 대한 연구의 특성  
 15주: 상담 프로그램 평가  
 16주: 기말고사
 

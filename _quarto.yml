@@ -89,7 +89,7 @@ website:
           #     - text: 22장 상담 프로그램 평가
       - text: ---
       - href: https://docs.google.com/document/d/1cOrbDCbGMzEisQkAS21Bn9pW1Y0djxAwS_3a6tyLPh0/edit?usp=sharing
-        text: Ask
+        text: Ask 
 
 format:
   html:

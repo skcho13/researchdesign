@@ -4,6 +4,7 @@ project:
   render: 
     - "*.qmd"
     - "*.ipynb"
+    - "!*-old.ipynb"
     - "!resources*.ipynb"
     - "!contents/ignore/"
   resources: CNAME
@@ -38,7 +39,7 @@ website:
       - text: ---
       - section: Notes
         contents:
-          - href: contents/overview.ipynb
+          - href: contents/overview.qmd
           - section: Part 2
             contents:
               - section: 5장 관심사와 연구주제

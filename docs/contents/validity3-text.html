@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>구성 타당도 원문 해석 – CHA Research Design</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5082c1b048a9243e4e9bba654cb201bf.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-12416e25eb8f50db99eb68558c7d1507.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">구성 타당도 원문 해석</h1>
+        </a>     
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">CHA Research Design</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Notes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 2</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">5장 관심사와 연구주제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/research-topics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">연구 주제</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/research-topics2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">가설 개발</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">6장 연구설계의 선택</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/select-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">연구 설계의 기본</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/select-design2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">연구 설계의 분류</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../contents/validity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">7장 타당도의 문제</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/validity1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">통계적 결론 타당도</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/validity2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">내적 타당도</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/validity3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">구성 타당도</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/validity4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">외적 타당도</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/population.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">8장 모집단 문제</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/scale.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">10장 척도개발</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 3</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/true-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">11장 진실험 설계</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/quasi-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">12장 준실험과 종단 설계</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/observation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13장 양적 기술 설계</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/analogue.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">14장 모의 연구</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contents/single-subject.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15장 단일 피험자 설계</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://docs.google.com/document/d/1cOrbDCbGMzEisQkAS21Bn9pW1Y0djxAwS_3a6tyLPh0/edit?usp=sharing" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ask</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#제7장.-연구에서의-타당도-문제-연구의-핵심" id="toc-제7장.-연구에서의-타당도-문제-연구의-핵심" class="nav-link active" data-scroll-target="#제7장.-연구에서의-타당도-문제-연구의-핵심">제7장. 연구에서의 타당도 문제: 연구의 핵심</a>
+  <ul>
+  <li><a href="#구성개념-타당도에-대한-위협" id="toc-구성개념-타당도에-대한-위협" class="nav-link" data-scroll-target="#구성개념-타당도에-대한-위협">구성개념 타당도에 대한 위협</a></li>
+  <li><a href="#표-7.4.-구성개념-타당도에-대한-위협" id="toc-표-7.4.-구성개념-타당도에-대한-위협" class="nav-link" data-scroll-target="#표-7.4.-구성개념-타당도에-대한-위협">표 7.4. 구성개념 타당도에 대한 위협</a></li>
+  <li><a href="#구성개념에-대한-불충분한-설명" id="toc-구성개념에-대한-불충분한-설명" class="nav-link" data-scroll-target="#구성개념에-대한-불충분한-설명">구성개념에 대한 불충분한 설명</a></li>
+  <li><a href="#구성개념-교란" id="toc-구성개념-교란" class="nav-link" data-scroll-target="#구성개념-교란">구성개념 교란</a></li>
+  <li><a href="#단일-조작-편향" id="toc-단일-조작-편향" class="nav-link" data-scroll-target="#단일-조작-편향">단일 조작 편향</a></li>
+  <li><a href="#단일-방법-편향" id="toc-단일-방법-편향" class="nav-link" data-scroll-target="#단일-방법-편향">단일 방법 편향</a></li>
+  <li><a href="#구성개념과-구성개념-수준의-교란" id="toc-구성개념과-구성개념-수준의-교란" class="nav-link" data-scroll-target="#구성개념과-구성개념-수준의-교란">구성개념과 구성개념 수준의 교란</a></li>
+  <li><a href="#처치에-민감한-요인구조" id="toc-처치에-민감한-요인구조" class="nav-link" data-scroll-target="#처치에-민감한-요인구조">처치에 민감한 요인구조</a></li>
+  <li><a href="#반응적인-자기보고-변화" id="toc-반응적인-자기보고-변화" class="nav-link" data-scroll-target="#반응적인-자기보고-변화">반응적인 자기보고 변화</a></li>
+  <li><a href="#실험-상황에-대한-반응성" id="toc-실험-상황에-대한-반응성" class="nav-link" data-scroll-target="#실험-상황에-대한-반응성">실험 상황에 대한 반응성</a></li>
+  <li><a href="#실험자-기대" id="toc-실험자-기대" class="nav-link" data-scroll-target="#실험자-기대">실험자 기대</a></li>
+  <li><a href="#새로움과-혼란의-효과" id="toc-새로움과-혼란의-효과" class="nav-link" data-scroll-target="#새로움과-혼란의-효과">새로움과 혼란의 효과</a></li>
+  <li><a href="#처치의-보상적-균등화" id="toc-처치의-보상적-균등화" class="nav-link" data-scroll-target="#처치의-보상적-균등화">처치의 보상적 균등화</a></li>
+  <li><a href="#보상적-경쟁" id="toc-보상적-경쟁" class="nav-link" data-scroll-target="#보상적-경쟁">보상적 경쟁</a></li>
+  <li><a href="#낙담에-따른-의욕-상실" id="toc-낙담에-따른-의욕-상실" class="nav-link" data-scroll-target="#낙담에-따른-의욕-상실">낙담에 따른 의욕 상실</a></li>
+  <li><a href="#처치-확산" id="toc-처치-확산" class="nav-link" data-scroll-target="#처치-확산">처치 확산</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">구성 타당도 원문 해석</h1>
+<p class="subtitle lead">상담연구방법론, by Heppner, P. P., Wampold, B. E., Owen, J., Thopso, M. N.</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="제7장.-연구에서의-타당도-문제-연구의-핵심" class="level1">
+<h1>제7장. 연구에서의 타당도 문제: 연구의 핵심</h1>
+<p>Validity Issues in Research: The Heart of It All</p>
+<section id="구성개념-타당도에-대한-위협" class="level3">
+<h3 class="anchored" data-anchor-id="구성개념-타당도에-대한-위협">구성개념 타당도에 대한 위협</h3>
+<p>Threats to Construct Validity</p>
+<p>구성개념 타당도(construct validity)는 독립변수(independent variable)와 종속변수(dependent variable)가 측정하고자 의도한 구성개념(constructs)을 얼마나 잘 대표하는지를 가리킵니다. 구성개념 타당도는 척도 개발(scale construction)에서 중요한 문제입니다(제10장 참조). 구성개념에 관해 모호한 점이 있다면, 교란(confound)이 존재한다고 할 수 있습니다. 보다 엄밀하게 말하면, 교란이란 가설에서 설정한 구성개념(hypothesized construct)과 논리적으로나 통계적으로 구별할 수 없는 대안적 구성개념(alternate construct)을 의미합니다.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="연구 적용 7.3">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+연구 적용 7.3
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Research Application 7.3</p>
+<p>한 연구자가 개인적인 문제를 지닌 남성 내담자들이 여성 상담자를 선호한다는 가설을 설정하고, 남성 내담자들을 두 집단 중 하나에 무선할당(random assignment)한다고 가정해 보겠습니다.</p>
+<p>한 집단은 여성 이름을 가진 상담자에 대한 설명을 읽고 여성 상담자의 사진을 봅니다. 다른 집단은 동일한 설명을 읽지만, 남성 이름과 남성의 사진이 제시됩니다.</p>
+<p>자료를 받은 후 각 참여자는 개인적인 문제로 해당 상담자를 만나고자 하는 의향을 표시합니다. 연구 결과가 예측한 대로 내담자들이 여성 상담자를 선호한다고 가정해 보겠습니다. 그리고 통계적 결론 타당도(statistical conclusion validity)와 내적 타당도(internal validity)가 적절하게 확보되었다고 추가로 가정해 보겠습니다.</p>
+<p>이 경우 남성 내담자들이 개인적인 문제에 관하여 여성 상담자를 선호한다는 결론을 내리는 것은 논리적입니다. 그러나 다른 설명도 가능합니다. 사진 속 여성이 남성 상담자보다 신체적으로 더 매력적이었을 수 있습니다. 따라서 여성 상담자를 만나고자 하는 의향은 성별(gender)이 아니라 개인의 매력도(personal attractiveness)에 기인한 것일 수 있습니다.</p>
+<p>잠시 시간을 내어 이러한 대안적 설명을 다룰 수 있도록 연구를 설계하는 방법을 생각해 보시기 바랍니다.</p>
+</div>
+</div>
+<p>이 사례(연구 적용 7.3)에서는 두 가지 구성개념, 즉 신체적 매력도(physical attractiveness)와 성별(gender)이 교란되어 있습니다. 구성개념 타당도는 독립변수와 종속변수 모두에 관련됩니다.</p>
+<p>독립변수와 관련하여, 집단들은 관심의 대상인 차원(dimension of interest)에서는 차이를 보여야 하지만 다른 차원에서는 체계적으로 달라져서는 안 됩니다. 독립변수가 성별을 조작화(operationalize)하기 위한 것이라면(앞의 사례와 같이), 집단들은 성별이라는 차원에서는 달라야 하지만 다른 차원(신체적 매력도 등)에서는 차이가 없어야 합니다. 마찬가지로 종속변수 역시 측정하려는 것만을 측정해야 하며, 관련 없는 요인들을 측정해서는 안 됩니다.</p>
+<p>여기서는 Shadish 등(2002)이 제시한 구성개념 타당도에 대한 위협들을 간략하게 검토하겠습니다. 이러한 위협은 크게 두 가지 주요 범주, 즉 구성개념 과소대표(construct underrepresentation)와 구성개념과 무관한 잉여 요소(surplus construct irrelevancies)로 나뉩니다.</p>
+<p>구성개념 과소대표는 구성개념의 중요한 측면들을 모두 포함하지 못할 때 발생합니다. 반면, 구성개념과 무관한 잉여 요소는 구성개념의 일부로서 관련 없는 측면들을 포함할 때 발생합니다.</p>
+<p>이를 비유를 통해 생각해 보겠습니다. 구멍이 너무 큰 그물로 고기를 잡으면 잡으려는 물고기 중 일부를 놓치게 됩니다(구성개념 과소대표). 반면, 구멍이 너무 작은 그물을 사용하면 원하지 않는 작은 물고기까지 많이 잡게 됩니다(구성개념과 무관한 잉여 요소).</p>
+<p>여러 측면에서 구성개념 타당도를 확보하려는 노력은 목표로 하는 물고기를 잡기에 적절한 크기의 구멍을 가진 그물을 찾으려는 노력과 같습니다. 각각의 위협에 대처하는 방법은 표 7.4에 요약되어 있습니다.</p>
+</section>
+<section id="표-7.4.-구성개념-타당도에-대한-위협" class="level2">
+<h2 class="anchored" data-anchor-id="표-7.4.-구성개념-타당도에-대한-위협">표 7.4. 구성개념 타당도에 대한 위협</h2>
+<p>Table 7.4. Threats to Construct Validity</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 38%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>위협(Threats)</th>
+<th>위협의 사례(Example)</th>
+<th>위협을 최소화하는 방법(Ways to Minimize Threats)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>불충분한 설명(Inadequate explications)</td>
+<td>구성개념의 조작화가 명확하지 않음</td>
+<td>구성개념의 중요하거나 필수적인 구성요소를 신중하고 합리적으로 분석</td>
+</tr>
+<tr class="even">
+<td>구성개념 교란(Construct confounding)</td>
+<td>한 구성개념(성별)을 조작화하면서 의도치 않게 다른 구성개념(매력도)도 조작화함</td>
+<td>두 구성개념이 어떻게 관련되는지 검토하고 이를 통제할 방법을 모색(예: 두 성별에서 비슷한 수준의 매력도를 사용)</td>
+</tr>
+<tr class="odd">
+<td>단일 조작 편향(Mono-operation bias)</td>
+<td>하나의 사례만을 사용하여 구성개념을 평가</td>
+<td>여러 사례와 측정치를 사용하여 구성개념 평가</td>
+</tr>
+<tr class="even">
+<td>단일 방법 편향(Mono-method bias)</td>
+<td>하나의 방법(자기보고)만을 사용하여 구성개념 측정</td>
+<td>여러 방법(자기보고 및 타인 평정 등)을 사용하여 구성개념 측정</td>
+</tr>
+<tr class="odd">
+<td>구성개념과 수준의 교란(Confounding constructs with level)</td>
+<td>참여자들의 전문성 수준이 제한되어 있음(예: 초보 상담자만 참여)</td>
+<td>초보 상담자부터 숙련된 상담자까지 포함하는 등 참여자들의 전문성 수준을 확대</td>
+</tr>
+<tr class="even">
+<td>처치에 민감한 요인구조(Treatment-sensitive factorial structure)</td>
+<td>처치가 의도한 효과와 별개로, 참여자들의 측정도구에 대한 반응에 영향을 미침(처치를 받음으로써 참여자들이 측정되는 내용에 더욱 민감해짐)</td>
+<td>이러한 상호작용을 발견하기 어려운 경우가 많지만, 위협이 확인되면 연구 결과의 한계로 다루어야 함</td>
+</tr>
+<tr class="odd">
+<td>반응적인 자기보고 변화(Reactive self-report changes)</td>
+<td>처치 조건에 배정되었다는 이유로 실제 변화가 아닌 자기보고상의 변화를 보고함</td>
+<td>객관적인 평정자가 실시하는 도구 또는 기타 비반응적 측정치를 사용</td>
+</tr>
+<tr class="even">
+<td>실험 상황에 대한 반응성(Reactivity to experimental situation)</td>
+<td>참여자가 연구자가 원하는 결과를 추측하고 그에 따르거나 반대로 행동함</td>
+<td>연구 목적을 모호하게 제시하거나 참여자가 자신이 속한 처치 조건을 알지 못하도록 함</td>
+</tr>
+<tr class="odd">
+<td>실험자 기대(Experimenter expectations)</td>
+<td>실험자가 참여자와 의사소통하고 상호작용하는 방식에 따라 의식적 또는 무의식적으로 연구 결과에 영향을 미침</td>
+<td>실험자에게 연구 목적을 모호하게 제시하거나 실험자가 처치 조건을 알지 못하도록 함</td>
+</tr>
+<tr class="even">
+<td>새로움과 혼란(Novelty and disruption)</td>
+<td>새로움에서 비롯된 흥분과 기대가 참여자의 반응에 영향을 미침</td>
+<td>새로움과 혼란이 결과에 미치는 영향을 발견하기 어려운 경우가 많지만, 우려되는 위협이라면 연구 결과의 한계로 다루어야 함</td>
+</tr>
+<tr class="odd">
+<td>처치의 보상적 균등화(Compensatory equalization of treatments)</td>
+<td>통제집단 참여자들이 다른 곳에서 대안적 처치나 서비스를 찾음</td>
+<td>이러한 요인이 발생하지 않도록 하거나 발생 여부를 파악할 수 있도록 설계하고, 결과 분석 시 이를 고려</td>
+</tr>
+<tr class="even">
+<td>보상적 경쟁(Compensatory rivalry)</td>
+<td>통제집단 참여자들이 처치집단 참여자들보다 더 좋은 성과를 내려고 노력함</td>
+<td>이러한 요인이 발생하지 않도록 하거나 발생 여부를 파악할 수 있도록 설계하고, 결과 분석 시 이를 고려</td>
+</tr>
+<tr class="odd">
+<td>낙담에 따른 의욕 상실(Resentful demoralization)</td>
+<td>덜 바람직한 처치집단(또는 통제집단)의 참여자들이 낙담하여 수행 수준이 저하됨</td>
+<td>이러한 요인이 발생하지 않도록 하거나 발생 여부를 파악할 수 있도록 설계하고, 결과 분석 시 이를 고려</td>
+</tr>
+<tr class="even">
+<td>처치 확산(Treatment diffusion)</td>
+<td>한 집단에 제공된 처치가 의도치 않게 다른 집단으로 확산됨</td>
+<td>처치가 통제집단 참여자들에게 확산되지 않도록 연구를 설계</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="구성개념에-대한-불충분한-설명" class="level2">
+<h2 class="anchored" data-anchor-id="구성개념에-대한-불충분한-설명">구성개념에 대한 불충분한 설명</h2>
+<p>Inadequate Explication of Constructs</p>
+<p>구성개념을 조작화하기 위해서는 먼저 그 구성개념의 중요하거나 필수적인 구성요소에 관해 신중하고 합리적으로 분석해야 합니다. 이러한 분석이 이루어지지 않을 때 발생하는 구성개념 타당도에 대한 위협은 구성개념 과소대표(construct underrepresentation)의 한 사례입니다.</p>
+<p>구성개념을 적절하게 조작화하려면 그 구성개념이 명확하게 정의되어야 합니다. 구성개념을 이름으로만 지칭하고 자세히 논의하지 않으면, 그것이 정확히 무엇인지를 확인하기 어렵습니다.</p>
+<p>예를 들어, 학대(abuse)는 해를 가하려는 의도가 있는 신체적 행위, 모든 신체적 행위, 신체적 공격과 언어적 공격 등을 의미할 수 있습니다. 따라서 구성개념을 기술하는 방식은 임의적이어서는 안 됩니다. 연구 가설이 이론에서 도출될 수 있도록 적절한 정의가 필요합니다.</p>
+<p>또한 구성개념에 관한 결론들이 축적될 수 있도록, 이전 연구들과 일관된 방식으로 구성개념을 정의하는 것이 중요합니다.</p>
+</section>
+<section id="구성개념-교란" class="level2">
+<h2 class="anchored" data-anchor-id="구성개념-교란">구성개념 교란</h2>
+<p>Construct Confounding</p>
+<p>앞에서 설명한 바와 같이, 교란(confounding)은 하나의 구성개념을 조작화하면서 의도치 않게 다른 구성개념까지 조작화할 때 발생합니다. 이는 구성개념과 무관한 잉여 요소(surplus construct irrelevancies)의 한 사례입니다.</p>
+<p>앞서 제시한 사례에서는 성별(gender)이 개인의 매력도(personal attractiveness)와 교란되어 있었습니다.</p>
+<p>교란은 발견하기 어렵고, 관계없는 구성개념들이 눈에 띄지 않게 연구에 끼어들 수 있기 때문에 문제가 됩니다.</p>
+</section>
+<section id="단일-조작-편향" class="level2">
+<h2 class="anchored" data-anchor-id="단일-조작-편향">단일 조작 편향</h2>
+<p>Mono-Operation Bias</p>
+<p>단일 조작 편향(mono-operation bias)은 독립변수의 한 수준을 단 하나의 사례로 나타내거나, 종속변수를 단 하나의 측정치로 측정할 때 발생하는 문제를 가리킵니다.</p>
+<p>단일 조작(mono-operations)에 문제가 있는 이유는 구성개념의 본질을 단 하나의 사례나 측정치로 포착하기 어려운 경우가 많기 때문입니다. 단일 조작은 구성개념을 과소대표하고 관련 없는 요소들을 포함할 가능성이 큽니다.</p>
+<p>독립변수의 단일 조작은 각 처치에서 하나의 사례만 사용할 때 발생할 수 있습니다. 예를 들어, 앞서 설명한 성별 연구에서는 여성 상담자 집단의 모든 참여자가 상담자의 동일한 이름과 설명을 읽고 동일한 사진을 보았습니다.</p>
+<p>이 연구에서는 여러 설명문, 남성과 여성의 여러 이름 및 여러 사진을 사용하는 편이 더 바람직했을 것입니다.</p>
+<p>종속변수와 관련해서도 단 하나의 측정치는 구성개념을 적절하게 반영하지 못할 수 있습니다. 예를 들어 ABC 불안검사(ABC Anxiety Test)는 사회불안을 어느 정도 반영할 수 있지만, 완벽하게 반영하지는 못할 것입니다.</p>
+<p>사회불안을 측정하는 다른 측정치를 추가하면 구성개념은 보다 완전하게 조작화될 것입니다. 여러 종속 측정치를 사용하여 하나의 구성개념을 조작화하는 기술적 근거는 통계학과 측정학에서 찾을 수 있으며, 이러한 근거는 제19장에서 개념적으로 논의됩니다.</p>
+</section>
+<section id="단일-방법-편향" class="level2">
+<h2 class="anchored" data-anchor-id="단일-방법-편향">단일 방법 편향</h2>
+<p>Mono-Method Bias</p>
+<p>앞서 언급한 바와 같이, 하나의 구성개념을 포착하기 위해서는 여러 측정치를 사용하는 것이 중요합니다. 그러나 모든 종속 측정치가 동일한 방법(method)을 사용한다면, 그 방법으로 인해 편향(bias)이 도입될 가능성이 있습니다.</p>
+<p>예를 들어, 자기보고 측정치(self-report measures)는 흔히 공통적인 응답자 편향(respondent bias)을 공유합니다. 참여자가 자기보고 도구 하나에서 사회적으로 바람직한 방식으로 응답한다면, 모든 자기보고 도구에서도 그러한 방식으로 응답할 수 있습니다. 따라서 이 방법은 일관된 편향을 도입하게 됩니다.</p>
+<p>두 구성개념을 같은 방식(예: 자기보고)으로 측정한다면, 변수들 사이의 상관관계(correlation)는 실제 구성개념 간의 상관관계가 아니라 방법분산(method variance)에서 비롯될 수 있습니다.</p>
+<p>예를 들어, 우울(depression)을 평가할 때 자기보고 측정치만 사용하는 대신, 내담자의 자기보고 측정치와 치료자가 실시하는 관찰자 평정 우울 측정치(observer measure of depression)를 함께 사용하는 것이 더 타당한 방법일 것입니다.</p>
+<p>단일 방법 편향은 독립변수에도 적용될 수 있습니다. 서면 설명, 이름, 사진을 제시하는 것은 한 가지 방법만을 사용하여 성별을 조작화한 사례입니다.</p>
+<p>여기서도 다음과 같은 의문이 남습니다. 상담자의 비디오테이프와 같은 다른 방법을 사용하여 성별을 조작화했다면 결과가 비슷했을 것인가?</p>
+</section>
+<section id="구성개념과-구성개념-수준의-교란" class="level2">
+<h2 class="anchored" data-anchor-id="구성개념과-구성개념-수준의-교란">구성개념과 구성개념 수준의 교란</h2>
+<p>Confounding Constructs with Levels of Constructs</p>
+<p>연속적인 구성개념(continuous constructs)은 흔히 불연속적인 사례(discrete exemplars)를 통해 조작화됩니다.</p>
+<p>예를 들어, 처치 연구에서는 상담자의 경력 수준(experience level)이 독립변수로 사용되는 경우가 많습니다. 경력은 매우 넓은 범위를 갖는 연속변수(continuous variable)입니다.</p>
+<p>선택된 경력 수준이 연속선상의 낮은 끝에 있는 집단(예: 초보 상담자, 실습 과정을 한 번 이수한 상담자)과 높은 끝에 있는 집단(예: 석사학위를 지닌 상담자 또는 10년, 15년, 20년의 경력을 가진 박사 수준의 상담자)으로 구성된다면, 경력이 상담 성과(counseling outcomes)에 영향을 미치지 않는다고 결론 내릴 수도 있습니다.</p>
+<p>그러나 연속선상의 다른 수준의 경력을 사용했다면 매우 다른 결과가 나타날 수 있습니다.</p>
+<p>구성개념의 제한된 수준만을 선택하는 것은 구성개념 과소대표의 또 다른 사례이며, 이 경우 구성개념은 그 구성개념의 특정 수준과 교란됩니다.</p>
+</section>
+<section id="처치에-민감한-요인구조" class="level2">
+<h2 class="anchored" data-anchor-id="처치에-민감한-요인구조">처치에 민감한 요인구조</h2>
+<p>Treatment-Sensitive Factorial Structure</p>
+<p>도구화(instrumentation)는 앞에서 논의한 바와 같이 내적 타당도(internal validity)에 문제를 일으킬 수 있습니다. 그러나 때로는 처치의 제공이 처치의 의도된 효과와 별개로 처치에 대한 참여자들의 반응에 영향을 미치기도 합니다.</p>
+<p>경우에 따라 처치는 측정도구의 특정 측면에 대한 참여자들의 민감성을 높이며, 이로 인해 측정도구의 요인구조(factor structure)가 달라집니다.</p>
+<p>예를 들어, 우울 측정도구는 처치를 받지 않은 우울한 사람들에게 실시할 때 단일차원적(unidimensional)일 수 있습니다. 그러나 처치 이후, 특히 심리교육적 요소(psychoeducational component)가 포함된 처치를 받은 경우에는 내담자들이 자신의 우울을 이루는 여러 측면을 구별할 수 있게 될 수 있습니다. 이러한 측면에는 우울감(melancholy), 활동에서 얻는 즐거움의 상실(loss of pleasure in activities), 식사와 수면, 비합리적 사고(irrational thoughts), 활동 수준(activity level) 등이 포함되며, 그 결과 측정도구가 다차원적(multidimensional)이 될 수 있습니다.</p>
+<p>따라서 처치 이후 참여자들은 이러한 측면에 민감해졌기 때문에 우울감의 심각도(graver degrees of melancholy)를 다루는 하위척도(subscale)에서 더 높은 점수를 받을 수 있습니다.</p>
+<p>처치받은 참여자들의 우울 측정도구 총점(total score)은, 예를 들어 처치가 우울감에는 영향을 미치지만 활동 수준에는 영향을 미치지 않는다는 사실을 잘못 반영할 수 있습니다.</p>
+</section>
+<section id="반응적인-자기보고-변화" class="level2">
+<h2 class="anchored" data-anchor-id="반응적인-자기보고-변화">반응적인 자기보고 변화</h2>
+<p>Reactive Self-Report Changes</p>
+<p>처치 조건(treatment condition)에 배정되기 전과 후에 자신의 기능 수준(functioning)을 자기보고하도록 하면, 실제로 변화하지 않았음에도 변화가 일어난 것처럼 보고하는 허위 보고(illusory reports of change)가 나타날 수 있습니다.</p>
+<p>예를 들어, 임상시험에서 처치를 받을 자격을 얻고자 하는 참여자들은 증상(symptomatology)이 증가했다고 보고할 수 있으며, 처치 조건에 배정되면 이러한 보고는 빠르게 사라질 수 있습니다.</p>
+<p>반면, 대기자 명단 통제집단(wait-list control group)에 배정된 참여자들은 연구자들이 자신들을 치료받지 않은 채 악화되도록 내버려 두지는 않을 것이라는 믿음에 근거하여, 실제보다 증상이 증가했다고 보고할 수 있습니다.</p>
+<p>이러한 상황에서는 처치가 효과적인 것처럼 나타나지만, 실제로 처치집단이 통제집단보다 우수한 것으로 나타난 결과는 전적으로 반응적인 자기보고(reactive self-reports)에 기인한 것일 수 있습니다.</p>
+<p>사후검사(posttests) 역시 처치에 대해 소급적으로 반응할 수 있습니다. 우울 질문지(depression inventory)를 작성하기 전에 인지행동치료(cognitive behavioral treatment) 과정을 마친 내담자는, 자신이 이제 그러한 생각들이 부적절하다는 것을 인식하고 있기 때문에 부적응적 인지(maladaptive cognitions)에 관한 문항들에 긍정적으로 응답할 수 있습니다. 반면, 역동적 치료(dynamic treatment)나 체험적 치료(experiential treatment)를 받은 참여자들에게서는 동일한 소급적 효과(retroactive effect)가 발생하지 않을 수 있습니다.</p>
+<p>이러한 위협에 대한 한 가지 해결책은 객관적인 평정자(objective raters)가 실시하는 도구나 그 밖의 비반응적 측정치(nonreactive measures)를 사용하는 것입니다(Webb, Campbell, Schwartz, &amp; Sechrest, 1966; Webb, Campbell, Schwartz, Sechrest, &amp; Grove, 1981).</p>
+</section>
+<section id="실험-상황에-대한-반응성" class="level2">
+<h2 class="anchored" data-anchor-id="실험-상황에-대한-반응성">실험 상황에 대한 반응성</h2>
+<p>Reactivity to the Experimental Situation</p>
+<p>실험 상황에 대한 반응성(reactivity to the experimental situation)은 참여자들이 처치 조건과는 부수적으로 관련된 실험 상황의 여러 측면에 반응할 때 발생합니다(호손 효과[Hawthorne effect]; Landsberger, 1957).</p>
+<p>때때로 참여자들은 연구자가 원하는 것이 무엇인지 추측하려고 하며(가설 추측[hypothesis guessing]이라고도 함), 추측한 결과에 순응하거나 반발하려고 합니다.</p>
+<p>가설 추측과 관련하여 가장 문제가 되는 점 중 하나는, 그것이 언제 발생하는지, 얼마나 자주 발생하는지, 그리고 그 효과의 방향과 크기가 어떠한지를 판단하기가 매우 어렵다는 것입니다.</p>
+<p>예를 들어, 성별 연구에 참여한 사람들이 연구 가설이 특정 성별의 상담자를 만나려는 자신의 의향과 관련되어 있다고 추측한다면, 연구자를 기쁘게 하거나 자신이 개방적이고 비성차별적(nonsexist)이라는 사실을 보여주기 위해 특정한 방식으로 응답할 수 있습니다.</p>
+<p>실험 상황에 대한 반응성은 의학에서의 플라세보 효과(placebo effects)라는 개념과도 관련됩니다. 플라세보 효과는 처치가 효과를 나타낼 것이라는 기대 때문에 상당한 정도로 발생합니다.</p>
+<p>바람직한 처치나 실험적 처치에 배정되면, 참여자는 그 처치가 효과적일 것이라는 기대를 더 강하게 갖게 될 수 있으며, 이러한 기대는 다시 내담자의 반응에 긍정적인 영향을 미칠 수 있습니다.</p>
+<p>이로 인해 처치의 실제 구성요소(actual ingredients of the treatment)와는 독립적인 처치 효과(treatment effect)가 발생할 수 있습니다.</p>
+<p>실험 상황에 대한 반응성을 줄이는 방법은 몇 가지가 있지만, 이러한 해결책에도 결함과 문제가 있습니다(Rosnow &amp; Rosenthal, 1997).</p>
+<p>첫째, 실험자는 연구 목적을 모호하게 제시하고, 어떤 처치가 다른 처치보다 더 나은 결과를 가져올 것으로 기대되는지를 알려주지 않을 수 있습니다.</p>
+<p>그러나 이는 충분한 설명에 근거한 동의(informed consent)의 완전성을 떨어뜨립니다. 윤리적 원칙에 따르면 참여자가 연구에 참여할 것인지를 결정하기 전에 연구 목적을 설명해야 하기 때문입니다(이러한 윤리적 문제에 대한 논의는 제3장 참조).</p>
+<p>또 다른 방법은 참여자들을 처치 조건에 대해 눈가림(blind)하여, 자신이 활성 약물(active medication)을 투여받는지 아니면 위약(placebo pill)을 투여받는지 알지 못하게 하는 것입니다.</p>
+</section>
+<section id="실험자-기대" class="level2">
+<h2 class="anchored" data-anchor-id="실험자-기대">실험자 기대</h2>
+<p>Experimenter Expectancies</p>
+<p>실험자(experimenters)들은 객관적인 과학자로 묘사되지만, 실제로 반드시 그렇지만은 않다는 증거가 있습니다.</p>
+<p>실험자들은 흔히 특정한 결과를 발견하기를 열망하며, 이러한 편향(bias)은 미묘한 방식으로, 때로는 그다지 미묘하지 않은 방식으로 참여자들에게 전달됩니다.</p>
+<p>예를 들어, 처치 연구에서 실험자가 상담자이기도 하다면, 자신이 높이 평가하는 처치의 효과를 내담자들이 보여주도록 돕는 데 지나치게 열중할 수 있습니다.</p>
+<p>이러한 일이 발생하면 결과를 초래한 인과적 요소(causal element)가 처치인지 기대(expectancy)인지가 분명하지 않게 됩니다. 이러한 불확실성은 연구의 구성개념 타당도를 위협합니다.</p>
+<p>실험자 기대는 제23장에서 자세히 논의됩니다.</p>
+</section>
+<section id="새로움과-혼란의-효과" class="level2">
+<h2 class="anchored" data-anchor-id="새로움과-혼란의-효과">새로움과 혼란의 효과</h2>
+<p>Novelty and Disruption Effects</p>
+<p>인간은 새로운 것(novelty)에 반응하며, 이러한 현상이 연구에 참여한 사람들이 새로운 실험 상황에서 어떻게 행동하는지에 영향을 미칠 수 있다는 점이 지적되어 왔습니다.</p>
+<p>혁신적인 처치는 연구 참여자들에게 영향을 미칠 수 있는 흥분과 기대의 분위기를 조성합니다.</p>
+<p>예를 들어, 선택적 세로토닌 재흡수 억제제(selective serotonin reuptake inhibitor, SSRI)인 플루옥세틴(fluoxetine, Prozac)이 1980년대에 처음 도입되었을 때, 이 약물은 기적의 치료제로 환영받았습니다. 당시 임상시험에 참여한 사람들은 후속 세대의 SSRI를 대상으로 한 임상시험 참여자들보다 훨씬 다른 기대감을 가지고 있었습니다.</p>
+<p>그러나 때로는 새로움이 일상적인 절차를 방해하고 해로운 효과를 만들어 낼 수도 있습니다. 타당도에 대한 많은 위협이 그러하듯, 새로움과 혼란의 효과가 처치 효과를 증가시킬지 아니면 감소시킬지를 알기는 어렵습니다.</p>
+</section>
+<section id="처치의-보상적-균등화" class="level2">
+<h2 class="anchored" data-anchor-id="처치의-보상적-균등화">처치의 보상적 균등화</h2>
+<p>Compensatory Equalization of Treatments</p>
+<p>대부분의 상담자들은 통제집단(control groups)의 참여자들에게 프로그램을 제공하지 않는 것을 자연스럽게 꺼립니다.</p>
+<p>연구에 직접 또는 간접적으로 관여하는 사람들이 처치를 받지 않는 집단에 배정된 참여자들을 보상하기 위해 통제집단 참여자들에게 어떤 형태의 서비스를 제공한다면, 처치의 보상적 균등화(compensatory equalization of treatments)가 발생했다고 할 수 있으며, 이는 내적 타당도에 위협이 될 수 있습니다.</p>
+<p>상담에서는 통제집단 참여자들이 다른 곳에서 서비스를 찾는 경우가 많습니다(성직자, 다른 상담 서비스 등).</p>
+<p>학교 장면에서는 통제집단을 맡은 것에 불만을 느끼는 행정 담당자들이 현장학습, 영화 관람 등과 같은 특별한 경험을 제공할 수 있습니다.</p>
+<p>이러한 경험은 참여자들의 점수에 상당한 영향을 미칠 수 있으며, 특히 종속변수가 자아개념(self-concept)처럼 비특정적인(nonspecific) 경우에 더욱 그러할 수 있습니다.</p>
+</section>
+<section id="보상적-경쟁" class="level2">
+<h2 class="anchored" data-anchor-id="보상적-경쟁">보상적 경쟁</h2>
+<p>Compensatory Rivalry</p>
+<p>원서 160쪽</p>
+<p>보상적 경쟁(compensatory rivalry)은 통제집단 참여자들이 자신들이 처치집단 참여자들과 적어도 동등하거나 더 우수하다는 것을 입증하기 위해, 처치집단 참여자들보다 더 좋은 수행을 보이려고 노력하는 것을 말합니다.</p>
+<p>타당도에 대한 이러한 위협은 참여자들의 수행 수준이 낮아질 경우 그들에게 어떤 결과가 초래될 수 있는 상황에서 가장 자주 발생합니다.</p>
+<p>이러한 위협을 설명하기 위해 정신건강센터(mental health center)의 상담자들이 처치집단 또는 통제집단에 무선할당된다고 가정해 보겠습니다.</p>
+<p>처치는 평가(assessment), 진단(diagnosis), 서비스 제공(service delivery)에 관한 재교육 과정(refresher courses)으로 구성됩니다.</p>
+<p>상담자들은 이러한 교육과정이 교정적(remedial)이며 자신들의 품위를 손상시키는 것(demeaning)이라고 생각하기 때문에, 자신들에게는 이러한 교육이 필요하지 않다는 것을 보여주기로 결심합니다.</p>
+<p>따라서 통제집단 참여자들은 이러한 영역에서 자신들이 유능하다는 것을 입증하기 위해 더욱 열심히 노력합니다.</p>
+</section>
+<section id="낙담에-따른-의욕-상실" class="level2">
+<h2 class="anchored" data-anchor-id="낙담에-따른-의욕-상실">낙담에 따른 의욕 상실</h2>
+<p>Resentful Demoralization</p>
+<p>낙담에 따른 의욕 상실(resentful demoralization)은 어떤 측면에서 보상적 경쟁의 반대 현상입니다.</p>
+<p>더 좋은 수행을 보이기 위해 열심히 노력하는 대신, 덜 바람직한 처치집단(또는 통제집단)에 속한 참여자들은 흔히 낙담하게 되며, 이는 수행 수준을 저하시킵니다.</p>
+<p>예를 들어, 우울증 연구에 참여한 사람들이 자신이 통제집단에 배정될 수도 있다는 사실을 알고 있더라도, 실제로 통제집단에 배정되면 평소보다 더 우울하다고 느낄 수 있습니다.</p>
+<p>이들은 자신의 삶에서 얼마 되지 않는 통제감을 세상이 빼앗아갔다는 느낌을 받을 수 있습니다.</p>
+<p>통제집단 참여자들의 이러한 의욕 상실은 참여자들의 우울 수준을 높이게 됩니다. 따라서 사후검사에서 나타나는 집단 간 점수 차이(즉, <span class="math inline">\(Ob_2 &lt; Ob_{ctrl}\)</span>)는 처치의 효과가 아니라 통제집단 참여자들의 의욕 상실에 기인한 것일 수 있습니다.</p>
+</section>
+<section id="처치-확산" class="level2">
+<h2 class="anchored" data-anchor-id="처치-확산">처치 확산</h2>
+<p>Treatment Diffusion</p>
+<p>때때로 한 집단에 제공된 처치가 의도하지 않았음에도 다른 집단으로 확산되는 경우가 있습니다.</p>
+<p>이러한 현상은 처치가 주로 정보 제공으로 이루어져 있고, 그 내용이 매우 흥미로울 때 특히 발생하기 쉽습니다.</p>
+<p>성적 학대(sexual abuse)에 관한 연구가 수행되고 있다고 가정해 보겠습니다. 이 주제는 관련성이 높기 때문에 처치집단 학생들이 통제집단 학생들과 내용을 논의할 수 있으며, 그 결과 사실상 두 집단 모두에 처치가 제공될 수 있습니다.</p>
+<p>처치 확산(diffusion of treatments)이 발생하면 처치가 실제로 효과적이더라도 집단 내 또는 집단 간 차이를 발견하기 어려워집니다.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>This work © 2024 by Sungkyun Cho is licensed under CC BY-NC-SA 4.0</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
